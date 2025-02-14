@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>test(2)</title>
     <!-- Bootstrap CSS -->
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -25,7 +24,7 @@
             color: #0c0c0c; 
         }
         header {
-            background: url('bankgrd.jpg') no-repeat center center; 
+            background: url('spacepod.png') no-repeat center center; 
             background-size: cover;
             color: #141414; 
             padding: 20px 0; 
@@ -69,15 +68,18 @@
         }
         .social-link {
             margin: 0 10px;
-            color: #0073e6;
+            color: #0381ff;
             font-size: 1.5em;
             text-decoration: none;
         }
         .social-link:hover {
-            color: #005bb5;
+            color: #fa0606;
         }
-  
-        
+        /* Example CSS for hover animation */
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }    
 /*Center alignment for the entire content */
 .content-container
 {
@@ -122,37 +124,59 @@
 /* Button styling */
 button, .btn {
     background-color: white; /* White background */
-    color: black; /* Black text */
-    border: 2px solid black; /* Black border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px 20px; /* Padding for better appearance */
-    font-size: 16px; /* Font size */
-    font-weight: bold; /* Bold text */
-    cursor: pointer; /* Pointer cursor on hover */
-    text-align: center; /* Center text alignment */
+        color: black; /* Black text */
+            border: 2px solid black; /* Black border */
+                border-radius: 5px; /* Rounded corners */
+                    padding: 10px 20px; /* Padding for better appearance */
+                        font-size: 16px; /* Font size */
+                            font-weight: bold; /* Bold text */
+                                cursor: pointer; /* Pointer cursor on hover */
+                                    text-align: center; /* Center text alignment */
 }
 
 /* Button hover effect */
 button:hover, .btn:hover {
     background-color: black; /* Black background on hover */
     color: white; /* White text on hover */
-}       
+}  
+
+.card {
+    border-radius: 10px; /* Slightly rounded edges */
+    overflow: hidden; /* Keeps image within rounded edges */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px; /* Match the card rounding */
+    border-top-right-radius: 10px;
+}
+
+body {
+    transform: scale(0.8); /* 80% zoom */
+    transform-origin: top left; /* Keeps it positioned correctly */
+    width: 125%; /* Prevents layout shift */
+    height: 125vh; /* Ensures the body takes full height */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-y: auto; /* Allows vertical scrolling */
+}
+
+.badge-primary {
+    background-color: #6eaffa !important; /* Change to your desired color */
+    color: rgb(255, 255, 255); /* Change text color if needed */
+}
+#personal-details a {
+    color: red; /* Default color */
+    text-decoration: none; /* Optional: Removes underline */
+}
+#personal-details a:hover {
+    color: blue; /* Changes to blue on hover */
+}
+
+
 </style>
 </head>
 <body>
 
 
-
-
-
-
-
-
-
-
-
-
-    
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
@@ -166,7 +190,7 @@ button:hover, .btn:hover {
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#repository">Quantum Computing</a></li>
                     <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#community">Blog/Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#personal-details">Resume/Blog</a></li>
                 </ul>
             </div>
         </div>
@@ -181,175 +205,801 @@ button:hover, .btn:hover {
     <div class="container">
         <p></p>
         <canvas class="webgl"></canvas>
-        
     </div>
 </header>
 
+<section></section>
+<div style="height: 60px;"></div> <!-- Spacer -->
+<section></section> 
 
-    <!-- About Section -->
-    <section id="about" class="container my-5">
-        <h2>About Me</h2>
-        <p>I am a passionate and driven individual with a strong interest in computer science, machine learning, artificial intelligence, and quantum computing. My curiosity pushes me to explore the frontiers of technology, and I am eager to contribute by creating innovative solutions and modeling new systems. I aim to leverage my skills and knowledge to solve complex problems and shape the future of computing.</p>
-        <h3>Skills</h3>
-        <ul class="list-inline">
-            <li class="list-inline-item badge badge-primary">machine learning</li>
-            <li class="list-inline-item badge badge-primary">data structures and algorithms</li>
-            <li class="list-inline-item badge badge-primary">quantum computing</li>
-            <li class="list-inline-item badge badge-primary">data analysis</li>
-            <li class="list-inline-item badge badge-primary">Kubernetes </li>
-            <li class="list-inline-item badge badge-primary">Docker </li>
-        </ul>
-    </section>
 
-<!-- LeetCode Achievements Section -->
-<section id="leetcode" class="container my-5">
-    <h2 class="text-center">LeetCode Progress</h2>
-    <p class="text-center mb-4">
-  
-    </p>
 
-    <div class="row justify-content-center">
-        <!-- Progress Heatmap -->
-       
-    <!-- Progress Summary -->
-   <div class="row justify-content-center">
-    <div class="col-md-6 text-center">
-        <img src="spedomete.png" alt="LeetCode Progress Summary" class="img-fluid shadow-image" style="width: 1000px; height: auto;">
-    </div>
-</div>
-    <!-- Statistics and Call-to-Action -->
-    <div class="text-center mt-4">
-        <h4></h4>
+
+<!--ABOUT ME SECTION -->
+<!--ABOUT ME SECTION -->
+<!--ABOUT ME SECTION -->
+<!--ABOUT ME SECTION -->
+<!--ABOUT ME SECTION -->
+
+
+
+<section id="quantum" class="container my-5">
+    <style>
+        #quantum {
+            background: beige;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 15px; /* Rounded edges */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for better effect */
+        }
+
+        #quantum h1 {
+        column-span: all;
+        font-size: 8vw; /* Reduced from 10vw */
+        margin: 0.5rem 0 2rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        border-bottom: 1rem double black;
+        font-weight: 900;
+        }
+
+        @media screen and (min-width: 1200px) {
+        #quantum h1 {
+        font-size: 80px; /* Reduced from 130px */
+        }
+        }
+
+        #quantum h2 {
+            color: rgb(240, 63, 63);
+            font-size: 2rem;
+            line-height: 100%;
+        }
+
+        #quantum p {
+            margin: 0 0 1.5rem 0;
+        }
+
+        #quantum h1 + p::first-letter,
+        #quantum h2 + p::first-letter {
+            color: beige;
+            background-color: black;
+            border-radius: 4px;
+            box-shadow: 3px 3px 0 rgb(99, 84, 236);
+            font-size: 250%;
+            padding: 0 0.5rem;
+            margin-right: 0.75rem;
+            float: left;
+            transition: 1s;
+        }
+
+        #quantum h2 + p {
+            margin-top: 1rem;
+        }
+
+        #quantum article {
+            columns: 25ch auto;
+            gap: 1rem;
+            border-bottom: 1rem solid black;
+            padding-bottom: 2rem;
+        }
+
+        #quantum aside {
+            font-size: 0.8rem;
+            font-style: italic;
+            margin-left: 1rem;
+        }
+    </style>
     
-        <a href="https://leetcode.com/xyz" target="_blank" class="btn btn-primary">
-             LeetCode Profile
-        </a>
-    </div>
+    <article style="columns: initial !important;">
+    <h1>About Me</h1>
+    <h2>Aditya Suman Sengar</h2>
+    <p>I am a passionate and driven individual with a deep interest in computer science, machine learning, artificial intelligence, and quantum computing. My curiosity fuels my desire to explore the cutting-edge advancements in these fields, pushing me to continually learn, innovate, and expand my understanding of complex systems. I am fascinated by the potential of intelligent algorithms and quantum technologies to revolutionize industries, solve intricate problems, and redefine the way we interact with the digital world. My goal is to leverage my skills, creativity, and technical expertise to develop groundbreaking solutions that contribute to the evolution of computing. Whether it's designing efficient machine learning models, optimizing quantum algorithms, or exploring novel AI architectures, I am committed to pushing the boundaries of technology and shaping a future driven by intelligent and powerful computational systems.</p>
+    <h3>Skills</h3>
+    <ul class="skills-list">
+        <li class="badge badge-primary">Machine Learning</li>
+        <li class="badge badge-primary">Deep Learning - CNNs, NLP, Transformers</li>
+        <li class="badge badge-primary">Data Structures And Algorithms</li>
+        <li class="badge badge-primary">Quantum Computing</li>
+        <li class="badge badge-primary">Data Analysis</li>
+        <li class="badge badge-primary"> Containerization </li>
+        <li class="badge badge-primary">ThreeJs</li>
+        <li class="badge badge-primary"> Version Control</li>
+    </ul>
+    <aside>
+        <p>Connect the switch to toggle the dark theme mode</p>
+    </aside>
+</article>
 </section>
 
+<!--TOGGLE CIRCUIT SECTION-->
+<!--TOGGLE CIRCUIT SECTION-->
+<!--TOGGLE CIRCUIT SECTION-->
+<!--TOGGLE CIRCUIT SECTION-->
+<!--TOGGLE CIRCUIT SECTION-->
+<!--TOGGLE CIRCUIT SECTION-->
 
+<section>
+<style>
+    .circuit {
+	--duration: 500ms;
+	--clr: black;
+	--wire-clr: black;
+	--wire-clr-on: rgb(0, 225, 255);
+	--wire-dashoffset: 400;
+	--wire-dasharray: 0 400;
+	--light-clr: transparent;
+	--light-clr-on: rgb(235, 36, 36);
+	--switch-clr: rgb(207, 85, 85);
+	--switch-clr-on: rgb(14, 165, 233);
+
+	position: relative;
+	width: 600px;
+	height: 300px;
+	color: var(--wire-clr-off);
+}
+.circuit > svg {
+	width: 100%;
+}
+svg > .switch,
+svg > .wire-path,
+svg > .battery,
+svg .lightbulb {
+	color: var(--clr);
+}
+/* wire  - animated */
+svg .animated-wire {
+	transition-property: stroke-dasharray, stroke-dashoffset;
+	transition-duration: 1000ms;
+	transition-timing-function: ease-in-out;
+	transition-delay: var(--wire-delay, 0ms);
+	color: var(--wire-clr);
+
+	stroke-dashoffset: var(--wire-dashoffset);
+	stroke-dasharray: var(--wire-dasharray);
+}
+
+svg > .switch > line {
+	color: var(--switch-clr);
+	transform: rotate(var(--switch-rotate, 0deg));
+	transform-origin: 120px 30px;
+	transition-property: transform, color;
+	transition-duration: var(--duration);
+	transition-timing-function: ease-in-out;
+	transition-delay: 0ms, var(--duration);
+}
+/* Bulb */
+svg > .lightbulb > circle {
+	transition: fill var(--duration) ease-in-out;
+	fill: var(--light-clr);
+	transition-delay: var(--light-delay, 0ms);
+}
+
+.circuit:has(input[type="checkbox"]:checked) {
+	--wire-clr: var(--wire-clr-on);
+	--wire-dashoffset: 0;
+	--wire-dasharray: 400 0;
+	--switch-clr: var(--wire-clr-on);
+	--switch-rotate: 24deg;
+	--wire-delay: var(--duration);
+	--light-clr: var(--light-clr-on);
+	--light-delay: var(--duration);
+}
+
+/* position invisible radio botton over the circuit "switch" */
+.circuit input[type="checkbox"] {
+	position: absolute;
+	left: 50%;
+	top: 3rem;
+	translate: -50% 0;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	scale: 8 6; /* scale to cover circuit switch */
+	cursor: pointer;
+	z-index: 3;
+}
+
+/* general styling */
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+:root {
+	--clr-bg: rgb(255, 255, 255);
+	--clr-txt: rgb(0, 0, 0);
+	--clr-primary: #f5f5f5;
+	--clr-secondary: #075985;
+}
+
+/* Add these new rules */
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-txt);
+}
+
+:root:has(.circuit input[type="checkbox"]:checked) {
+  --clr-bg: #13161e;
+  --clr-txt: rgb(0, 0, 0);
+  --clr-primary: #2d2d2d;
+  --clr-secondary: #0ea5e9;
+}
+</style>
+
+<div class="content-container">
+    <div class="circuit">
+        <input type="checkbox" id="switch" title="Click to turn on the light">
+        <svg width="400" height="300" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+            <!-- Main solid wire (background) -->
+            <path class="wire-path" d="M 170 30 H 260 V 120 
+                                   M 30 30 V 60 M 30 90 V 120 
+                                   M 30 120 H 135 M 155 120 H 260
+                                   M 30 30 H 120" stroke="currentColor" stroke-width="2" stroke-cap="rounded" fill="none" />
+    
+            <!-- Animated overlay wire (will "fill" when checked) -->
+    
+            <path class="animated-wire" d="M 170 30 H 260 V 120 
+                                   M 30 30 V 60 M 30 90 V 120 
+                                   M 30 120 H 135 M 155 120 H 260
+                                   M 30 30 H 120" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="0 400" stroke-dashoffset="400" />
+    
+            <!-- Switch (open by default) -->
+            <g class="switch">
+                <line x1="120" y1="30" x2="165" y2="10" stroke="currentColor" stroke-width="2.5" />
+                <circle cx="120" cy="30" r="4" fill="currentColor" />
+                <circle cx="170" cy="30" r="4" fill="currentColor" />
+            </g>
+    
+            <!-- Lightbulb (initially transparent fill) -->
+            <g class="lightbulb" transform="translate(30,75)">
+                <circle cx="0" cy="0" r="15" stroke="currentColor" stroke-width="2.5" fill="transparent" />
+                <line x1="-8" y1="8" x2="8" y2="-8" stroke="currentColor" stroke-width="2" />
+                <line x1="-8" y1="-8" x2="8" y2="8" stroke="currentColor" stroke-width="2" />
+            </g>
+    
+            <!-- Battery -->
+            <g class="battery" transform="translate(145, 120)">
+                <rect x="-10" y="-10" width="2.5" height="20" fill="currentColor" />
+                <rect x="10" y="-15" width="2.5" height="30" fill="currentColor" />
+            </g>
+        </svg>
+    
+    </div>
+</div>
+</section>
+
+<section></section>
+<div style="height: 60px;"></div> <!-- Spacer -->
+<section></section> 
+
+<section></section>
+<div style="height: 60px;"></div> <!-- Spacer -->
+<section></section> 
+
+
+
+
+
+
+
+<!--TERMINAL SECTION -->
+<!--TERMINAL SECTION -->    
+<!--TERMINAL SECTION -->   
+<!--TERMINAL SECTION -->   
+<!--TERMINAL SECTION -->    
+
+    <section id = "window" class ="container my-5">
+        <style>
+            /* Original Styles - Unchanged */
+            .terminal-container {
+                max-width: 800px;
+                margin: 2rem auto;
+                background-color: #1a1a1a;
+                border-radius: 8px;
+                box-shadow: 0 0 20px rgba(0,255,0,0.1);
+            }
+            
+            #terminal {
+                height: 400px;
+                padding: 20px;
+                overflow-y: auto;
+                font-family: 'Courier New', monospace;
+                font-size: 0.9rem;
+                color: #ffffff;
+            }
+            
+            .input-line {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin: 8px 0;
+            }
+            
+            .prompt {
+                color: #ffffff;
+            }
+            
+            #input {
+                background: none;
+                border: none;
+                color: inherit;
+                font-family: inherit;
+                font-size: inherit;
+                flex: 1;
+                outline: none;
+            }
+            
+            .terminal-output {
+                margin: 8px 0;
+                white-space: pre-wrap;
+            }
+            
+            #input::after {
+                content: "▋";
+                animation: blink 1s infinite;
+            }
+            
+            @keyframes blink {
+                0% { opacity: 1; }
+                50% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+            
+            /* New Application Window Styles */
+            .app-window {
+                max-width: 840px;
+                margin: 2rem auto;
+                background: #1a1a1a;
+                border-radius: 8px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            }
+            
+            .title-bar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 8px 12px;
+                background: #363636;
+                border-radius: 8px 8px 0 0;
+                border-bottom: 1px solid #1a1a1a;
+            }
+            
+            .title-buttons {
+                display: flex;
+                gap: 8px;
+            }
+            
+            .title-button {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            
+            .close { background: #00ffff; }
+            .minimize { background: #ff00ff; }
+            .maximize { background: #ffff00; }
+            
+            .title-text {
+                color: #ffffff;
+                font-family: Arial, sans-serif;
+                font-size: 0.8rem;
+                opacity: 0.8;
+                flex-grow: 1;
+                text-align: center;
+                padding-right: 60px;
+            }
+            
+            /* Adjust original terminal container */
+            .app-window .terminal-container {
+                margin: 0;
+                border-radius: 0 0 8px 8px;
+                box-shadow: none;
+            }
+            </style>
+            <div class="app-window">
+                <div class="title-bar">
+                    <div class="title-buttons">
+                        <div class="title-button close"></div>
+                        <div class="title-button minimize"></div>
+                        <div class="title-button maximize"></div>
+                    </div>
+                    <span class="title-text">Terminal</span>
+                </div>
+                
+                <!-- Original Terminal Container -->
+                <div class="terminal-container">
+                    <div id="terminal"></div>
+                </div>
+            </div>
+  
+
+
+ <!-- KEYBOARD SECTION -->    
+ <!-- KEYBOARD SECTION -->  
+ <!-- KEYBOARD SECTION -->  
+ <!-- KEYBOARD SECTION -->  
+
+
+
+    <section id="itemclass" class="container my-5">
+
+            <div class="content-container">
+                    <div class="image-box">
+                        <img src="key8.png" alt="Quantum Computing" class="shadow-image" style="width: 450px; height: auto;">
+
+                    </div>
+            </div>
+</section>     
+
+
+
+
+
+    <section></section>
+    <div style="height: 60px;"></div> <!-- Spacer -->
+    <section></section> 
+ 
+
+
+
+
+<!--projects -->
+<!--projects -->
+<!--projects -->
+<!--projects -->
+<!--projects -->
 
 
     <!--projects -->
     <section id="projects" class="container my-5">
         <h2>Projects</h2>
+        <section></section>
+        <div style="height: 60px;"></div> <!-- Spacer -->
+        <section></section>
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="card   w-75 h-100">
-                    <img src="lander.png" class="card-img-top" alt="Project 1 Image">
+                <div class="card   w-75 h-100 shadow">
+                    <img src="lander.jpg" class="card-img-top" alt="Project 1 Image">
                     <div class="card-body">
                         <h5 class="card-title">Project 1: Lunar Lander Simulator</h5>
                         <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project1" target="_blank" class="btn">View on GitHub</a>
+                        <a href="https://github.com/your-username/project1" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card w-75 h-100">
-                    <img src="mashroom.png" class="card-img-top" alt="Project 2 Image">
+                <div class="card w-75 h-100 shadow">
+                    <img src="mushroom.jpg" class="card-img-top" alt="Project 2 Image">
                     <div class="card-body">
                         <h5 class="card-title">Project 2: Mushroom Classifier</h5>
                         <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project2" target="_blank" class="btn">View on GitHub</a>
+                        <a href="https://github.com/your-username/project2" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card w-75 h-100">
+                <div class="card w-75 h-100 shadow">
                     <img src="heart.jpg" class="card-img-top" alt="Project 3 Image">
                     <div class="card-body">
                         <h5 class="card-title">Project 3: Heart Attack Detection</h5>
                         <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project3" target="_blank" class="btn">View on GitHub</a>
+                        <a href="https://github.com/your-username/project3" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card w-75 h-100">
+                <div class="card w-75 h-100 shadow">
                     <img src="aps.jpg" class="card-img-top" alt="Project 4 Image">
                     <div class="card-body">
                         <h5 class="card-title">Project 4: Quantum Avoidance Field</h5>
                         <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project4" target="_blank" class="btn">View on GitHub</a>
+                        <a href="https://github.com/your-username/project4" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card w-75 h-100">
-                    <img src="wave.png" class="card-img-top" alt="Project 5 Image">
+                <div class="card w-75 h-100 shadow">
+                    <img src="wave2.png" class="card-img-top" alt="Project 5 Image">
                     <div class="card-body">
                         <h5 class="card-title">Project 5: Wave Function Collapse</h5>
                         <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project5" target="_blank" class="btn">View on GitHub</a>
+                        <a href="https://github.com/your-username/project5" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card w-75 h-100">
+                <div class="card w-75 h-100 shadow">
                     <img src="noise.jpg" class="card-img-top" alt="Project 6 Image">
                     <div class="card-body">
                         <h5 class="card-title">Project 6: Adversarial Attack Estimation</h5>
                         <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project6" target="_blank" class="btn">View on GitHub</a>
+                        <a href="https://github.com/your-username/project6" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card w-75 h-100">
+                <div class="card w-75 h-100 shadow">
                     <img src="thebrain.png" class="card-img-top" alt="Project 7 Image">
                     <div class="card-body">
                         <h5 class="card-title">Project 7: Brain Tumor Classification </h5>
                         <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project7" target="_blank" class="btn">View on GitHub</a>
+                        <a href="https://github.com/your-username/project7" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 mb-4">
-                <div class="card w-75 h-100">
+                <div class="card w-75 h-100 shadow">
                     <img src="engine.png" class="card-img-top" alt="Project 8 Image">
                     <div class="card-body">
                         <h5 class="card-title">Project 8 : Physics simulation engine</h5>
                         <p class="card-text">simulates physics bodies and simulation .</p>
-                        <a href="https://github.com/your-username/project6" target="_blank" class="btn">View on GitHub</a>
+                        <a href="https://github.com/your-username/project6" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 mb-4">
-                <div class="card w-75 h-100">
+                <div class="card w-75 h-100 shadow">
                     <img src="sim.png" class="card-img-top" alt="Project 8 Image">
                     <div class="card-body">
                         <h5 class="card-title">Project 9 : Grover Simulation</h5>
                         <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project6" target="_blank" class="btn">View on GitHub</a>
+                        <a href="https://github.com/your-username/project6" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
             </div>
             
-        </div>
-    </section>
-    
-
-    <section id="repository" class="container my-5">
-        <h2>Quantum Computing</h2>
-        <p>Check out my work on quantum computing</p>
-        <div class="content-container">
-            <div class="image-box">
-                <img src="tfq.jpg" alt="Quantum Computing" class="shadow-image" />
+            <div class="col-md-4 mb-4">
+                <div class="card w-75 h-100 shadow">
+                    <img src="evo.png" class="card-img-top" alt="Project 8 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 9 :Conway's Game of Life</h5>
+                        <p class="card-text"></p>
+                        <a href="https://github.com/your-username/project6" target="_blank" class="btn"> GitHub</a>
+                    </div>
+                </div>
             </div>
-            <a href="https://github.com/your-username" target="_blank" class="btn">GitHub Repository</a>
+            <div class="col-md-4 mb-4">
+                <div class="card w-75 h-100 shadow">
+                    <img src="sagitarriusa.png" class="card-img-top" alt="Project 8 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 9 :Black Hole Simulation Analysis</h5>
+                        <p class="card-text"></p>
+                        <a href="https://github.com/your-username/project6" target="_blank" class="btn"> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+
+
         </div>
     </section>
     
 
+
+    <section></section>
+    <div style="height: 60px;"></div> <!-- Spacer -->
+    <section></section>
+    <section></section>
+    <div style="height: 60px;"></div> <!-- Spacer -->
+    <section></section>
+
+    
+<!--quantum repo-->
+<!--quantum repo-->
+<!--quantum repo-->
+<!--quantum repo-->
+<!--quantum repo-->
+
+
+<section id="repository" class="container my-5">
+        <h2></h2>
+        <p></p>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <style>
+            .qc-container {
+                background-color: #ffffff;
+                color: #000000;
+                font-family: 'Press Start 2P', cursive;
+                text-align: center;
+                margin: 20px auto;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 600px; /* Container width control */
+                border: 3px solid #000000;
+                border-radius: 10px;
+                box-shadow: 5px 5px 0 hsl(189, 100%, 50%);
+            }
+    
+            .qc-main-header {
+                font-size: 2em; /* Reduced from 3em */
+                letter-spacing: 3px;
+                text-shadow: 2px 2px 0 hsl(189, 100%, 50%), 4px 4px 0 #000000;
+                margin: 20px 0;
+                line-height: 1.2;
+            }
+    
+            .qc-secondary-text {
+                font-size: 0.8em;
+                margin: 15px 0;
+            }
+    
+            .qc-nav-item {
+                font-size: 0.7em;
+                color: #000000;
+                text-decoration: none;
+                padding: 5px 10px;
+            }
+        </style>
+        <div class="qc-container">
+            <div class="qc-main-header">QUANTUM COMPUTING REPOSITORY</div>
+            <div class="qc-secondary-text"></div>
+        </div>
+
+            <div class="content-container">
+            <div class="image-box">
+
+                    </div>
+                        <a href="https://github.com/your-username" target="_blank" class="btn">GitHub Repository</a>
+                    </div>
+
+            </div>
+</section>      
+
+
+
+
+
+
+<!--article-->
+
+<!--article-->
+
+<!--article-->
+
+<!--article-->
+
+<!--article-->
+
+    <section id="quantum" class="container my-5">
+        <style>
+            #quantum {
+                background: beige;
+                padding: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+                border-radius: 15px; /* Rounded edges */
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for better effect */
+            }
+    
+            #quantum h1 {
+            column-span: all;
+            font-size: 8vw; /* Reduced from 10vw */
+            margin: 0.5rem 0 2rem 0;
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 1rem double black;
+            font-weight: 900;
+            }
+
+            @media screen and (min-width: 1200px) {
+            #quantum h1 {
+            font-size: 80px; /* Reduced from 130px */
+            }
+            }
+    
+            #quantum h2 {
+                color: rgb(240, 63, 63);
+                font-size: 2rem;
+                line-height: 100%;
+            }
+    
+            #quantum p {
+                margin: 0 0 1.5rem 0;
+            }
+    
+            #quantum h1 + p::first-letter,
+            #quantum h2 + p::first-letter {
+                color: beige;
+                background-color: black;
+                border-radius: 4px;
+                box-shadow: 3px 3px 0 rgb(99, 84, 236);
+                font-size: 250%;
+                padding: 0 0.5rem;
+                margin-right: 0.75rem;
+                float: left;
+                transition: 1s;
+            }
+    
+            #quantum h2 + p {
+                margin-top: 1rem;
+            }
+    
+            #quantum article {
+                columns: 25ch auto;
+                gap: 1rem;
+                border-bottom: 1rem solid black;
+                padding-bottom: 2rem;
+            }
+    
+            #quantum aside {
+                font-size: 0.8rem;
+                font-style: italic;
+                margin-left: 1rem;
+            }
+        </style>
+        
+        <article>
+        <h1>QUANTUM COMPUTING</h1>
+        <h2>What is quantum computing?</h2>
+        <p>Quantum computing is an emergent field of cutting-edge computer science harnessing the unique qualities of quantum mechanics to solve problems beyond the ability of even the most powerful classical computers.
+
+            The field of quantum computing contains a range of disciplines, including quantum hardware and quantum algorithms. While still in development, quantum technology will soon be able to solve complex problems that supercomputers can’t solve, or can’t solve fast enough.</p>
+
+        <p>By taking advantage of quantum physics, fully realized quantum computers would be able to process massively complicated problems at orders of magnitude faster than modern machines. For a quantum computer, challenges that might take a classical computer thousands of years to complete might be reduced to a matter of minutes.
+            <aside>
+                <p>The study of subatomic particles, also known as quantum mechanics, reveals unique and fundamental natural principles. Quantum computers harness these fundamental phenomena to compute probabilistically and quantum mechanically.</p>
+            </aside>
+            By taking advantage of quantum physics, fully realized quantum computers would be able to process massively complicated problems at orders of magnitude faster than modern machines. For a quantum computer, challenges that might take a classical computer thousands of years to complete might be reduced to a matter of minutes. This unprecedented computational power stems from the principles of superposition and entanglement, which allow quantum bits, or qubits, to exist in multiple states simultaneously and work together in ways that classical bits cannot. As a result, quantum computers have the potential to revolutionize fields such as cryptography, artificial intelligence, materials science, and complex system simulations</p>
+
+        <p>Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.</p>
+
+        <h2>It's Really a Lot of Words</h2>
+
+        <p>Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.</p>
+
+        <p>Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede.
+            <aside>
+                <p>Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Fusce fermentum. Nullam cursus lacinia erat.</p>
+            </aside> Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Ut leo. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum.</p>
+
+        <h2>Can You Make it Look Good?</h2>
+
+        <p>Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.</p>
+
+        <p>Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis.</p>
+
+        <p>Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Fusce fermentum. Nullam cursus lacinia erat. Praesent blandit laoreet nibh. Fusce convallis metus id felis luctus adipiscing. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Ut leo. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum.</p>
+
+        <p>Proin ac blandit ligula. Aenean ornare magna vitae elit laoreet, vitae luctus nulla pharetra. Integer at tellus congue, elementum sapien id, convallis nunc. Aenean sit amet enim et orci euismod vestibulum. Nulla volutpat scelerisque elit, sit amet scelerisque nisl pulvinar in. Ut molestie eros at bibendum pharetra. Sed efficitur dictum nunc, id vulputate risus vulputate a. Praesent vehicula nec est vel rhoncus. Ut vehicula, dolor nec suscipit venenatis, augue velit congue odio, sit amet tincidunt elit eros eu quam.</p>
+
+        <p>Morbi sed nulla at justo vestibulum cursus ut id urna. Etiam accumsan, velit sed feugiat vehicula, nisi tortor iaculis orci, sed bibendum elit urna vel purus. Suspendisse sagittis nisi nec elit convallis, et efficitur sapien venenatis. Curabitur auctor justo sapien, quis tristique neque cursus in. Integer fermentum metus id sapien tristique, a hendrerit lacus blandit. Fusce dictum sem risus, nec blandit ligula fermentum ac. Praesent tincidunt felis sed mi venenatis maximus.</p>
+
+        <p>Suspendisse potenti. Quisque sed ex mauris. Aenean rhoncus, tortor at interdum finibus, erat risus scelerisque nisi, non vehicula nisi libero non metus. Integer vel metus a justo viverra pharetra ut ac arcu. Nam blandit nunc justo, vitae gravida ligula luctus nec. Fusce convallis, justo a porttitor ultricies, sapien est fermentum ex, ut ornare tortor lectus ac eros. Integer facilisis risus non neque lacinia scelerisque. Mauris eu turpis eros. Donec tempor nisi a odio posuere ultricies. Nullam malesuada dui sit amet tortor varius fringilla.</p>
+    </article>
+    </section>
+
+<section></section>
+    <div style="height: 60px;"></div> <!-- Spacer -->
+    <section></section>
+    <section></section>
+    <div style="height: 60px;"></div> <!-- Spacer -->
+    <section></section>
+
+   
 <!-- Research Section -->
+ <!-- Research Section -->
+  <!-- Research Section -->
+   <!-- Research Section -->
+    <!-- Research Section -->
+
+
+
 <section id="research" class="container my-5">
     <h2>Research</h2>
+    <div style="height: 60px;"></div> <!-- Spacer -->
     <div class="row">
         <!-- Research Paper 1 -->
         <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card shadow">
                 <img src="research1.jpg" class="card-img-top" alt="Research Paper Image 1">
                 <div class="card-body">
                     <h5 class="card-title">Title of Research Paper 1</h5>
@@ -360,7 +1010,7 @@ button:hover, .btn:hover {
         </div>
         <!-- Research Paper 2 -->
         <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card shadow">
                 <img src="res2.jpg" class="card-img-top" alt="Research Paper Image 2">
                 <div class="card-body">
                     <h5 class="card-title">Title of Research Paper 2</h5>
@@ -370,7 +1020,7 @@ button:hover, .btn:hover {
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card shadow">
                 <img src="res3.jpg" class="card-img-top" alt="Research Paper Image 2">
                 <div class="card-body">
                     <h5 class="card-title">Title of Research Paper 3</h5>
@@ -382,44 +1032,174 @@ button:hover, .btn:hover {
         <!-- ++ -->  
     </div>
 </section>
+<!--REVIEW SECTION -->
+<!--REVIEW SECTION -->
+<!--REVIEW SECTION -->
+<!--REVIEW SECTION -->
+<!--REVIEW SECTION -->
 
-<section id="community" class="container my-5">
-    <h2>Blog</h2>
-    <p>Read about my community service experiences:</p>
-    <a href="https://your-blog-website.com" target="_blank" class="btn btn-primary">Visit My Blog</a>
-</section>
+<section id = 'r2' class = "container my-5">
+    <h2>Review paper</h2>
+    <div style="height: 60px;"></div> <!-- Spacer -->
+    <div class = "row ">
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <img src="research1.jpg" class="card-img-top" alt="Research Paper Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Title of Research Paper 1</h5>
+                <p class="card-text">A brief description of the research paper goes here.</p>
+                <a href="link-to-paper1.pdf" target="_blank" class="btn">Read Paper</a>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <img src="res2.jpg" class="card-img-top" alt="Research Paper Image 2">
+                <div class="card-body">
+                    <h5 class="card-title">Title of Research Paper 2</h5>
+                    <p class="card-text">A brief description of the research paper goes here.</p>
+                    <a href="link-to-paper2.pdf" target="_blank" class="btn">Read Paper</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<section>  
+    
+    
 
+    <section></section>
+    <div style="height: 60px;"></div> <!-- Spacer -->
+    <section></section>
 <!-- Personal Details Section -->
+<!-- Personal Details Section -->
+ <!-- Personal Details Section -->
+  <!-- Personal Details Section -->
+   <!-- Personal Details Section -->
+
+
+
 <section id="personal-details" class="container my-5">
-    <h2>Personal Details</h2>
-    <ul>
-        <li><strong>Full Name:</strong> Aditya Suman Sengar</li>
-        <li><strong>Email:</strong> <a href="mailto:your-email@example.com">aditya.229310225@muj.manipal.edu</a></li>
-        <li><strong>Alt Email:</strong> <a href="mailto:your-email@example.com">aditya.suman5239@gmail.com</a></li>
-        <li><strong>Phone:</strong> <a href="tel:+1234567890">+91 886-115-0142</a></li>
-        <li><strong>Location:</strong> Banglore , India</li>
-        <!-- Add any additional details you want to share -->
-    </ul>
+    <h2></h2>
+  <!-- Personal Details Card -->
+<div class="container my-5">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Personal Details</h4>
+            <ul class="list-unstyled">
+                <li><strong>Full Name:</strong> Aditya Suman Sengar</li>
+                <li><strong>Email:</strong> 
+                    <a href="mailto:aditya.229310225@muj.manipal.edu" class="custom-link">
+                        aditya.229310225@muj.manipal.edu
+                    </a>
+                </li>
+                <li><strong>Alt Email:</strong> 
+                    <a href="mailto:aditya.suman5239@gmail.com" class="custom-link">
+                        aditya.suman5239@gmail.com
+                    </a>
+                </li>
+                <li><strong>Phone:</strong> 
+                    <a href="tel:+918861150142" class="custom-link">
+                        +91 886-115-0142
+                    </a>
+                </li>
+                <li><strong>Location:</strong> Bangalore, India</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- FORM SECTION  -->
+ <!-- FORM SECTION  -->
+  <!-- FORM SECTION  -->
+   <!-- FORM SECTION  -->
+    <!-- FORM SECTION  -->
+
     </section>
+
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <form>
+            <div class="form-group ">
+                <label for="name">Name</label>
+                <input type="text" class="form-control shadow" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control shadow" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control shadow" id="message" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+   
+    <!-- Social Links Below Contact Form -->
+     <!-- Social Links Below Contact Form -->
+      <!-- Social Links Below Contact Form -->
+       <!-- Social Links Below Contact Form -->
+
 
         <!-- Social Links Below Contact Form -->
         <div class="social-links mt-4">
-            <a href="https://linkedin.com/in/your-profile" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://linkedin.com/in/aditya-senghar-suman-606277258" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/adityasuman2564h" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-            <a href="aditya.suman5239@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
-            <a href="tel:+1234567890" class="social-link"><i class="fas fa-phone"></i></a>
+            <a href="https://aditya.suman5239@gmail.com" target = "_blank "class="social-link"><i class="fas fa-envelope"></i></a>
+            
             <a href="domain" class="social-link"><i class="fas fa-lightbulb"></i></a>
+            <a href="https://linkedin.com/in/aditya-senghar-suman-606277258" target="_blank" class="social-link"><i class="fab fa-docker"></i>
+        
+            <a href="#"><i class=""></i></a>
+                
 
         </div>
     </section>
 
     
+    
+    <!-- Download Resume Section -->
+     
+    <!-- Download Resume Section -->
+     
+    <!-- Download Resume Section -->
+     
+    <!-- Download Resume Section -->
+
     <!-- Download Resume Section -->
 <section id="download-resume" class="container my-5 text-center">
-    <h2>Download My Resume</h2>
-    <p>If you'd like to know more about my experience and skills, feel free to download my resume below:</p>
-    <a href="path/to/your-resume.pdf" class="btn btn-primary" download>Download</a>
+    <h2>Download My Resume / Visit My Blog</h2>
+    <p></p>
+    <a href="path/to/your-resume.pdf" class="btn" download>Download</a>
+    <a href="https://youtube.com" target="_blank" class="btn">Visit My Blog</a>
 </section>
+
+
+<!-- BLUE WHALE-->
+ <!-- BLUE WHALE-->
+  <!-- BLUE WHALE-->
+   <!-- BLUE WHALE-->
+    <!-- BLUE WHALE-->
+
+<section></section>
+    <div style="height: 60px;"></div> <!-- Spacer -->
+    <section></section>
+
+    <section id="itemclass" class="container my-5">
+
+        <div class="content-container">
+                <div class="image-box">
+                    <img src="Subject.png" alt="Quantum Computing"  style="width: px; height: auto;">
+
+                </div>
+        </div>
+</section>     
+
+<section></section>
+    <div style="height: 60px;"></div> <!-- Spacer -->
+    <section></section>
+<!-- Testimonials Section -->
+
 
 <!-- end -->
 
@@ -485,15 +1265,145 @@ button:hover, .btn:hover {
         };
 
         animate();
-    </script>
 
+        
+    </script>
+    
+    <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+    
+    <script>
+        // Original JavaScript - Unchanged
+        const terminal = document.getElementById('terminal');
+        let currentDirectory = '~/BigDipper';
+        const commands = {
+            "help": () => `Available commands:
+
+            - code      launch leetcode profile
+            - kg        launch kaggle profile
+            - git       Open my GitHub profile
+            - project   All projects worked on
+            - launch    launch project (example - launch one)
+        
+            - course    courses complted 
+            - ca        access certficate (example ca course_name)
+            - contact   Contact information
+            - clear     Clear the terminal
+            - theme     Change terminal theme`,
+
+            
+            
+            "course": () => `Machine learning standford\nintroducntion to quantum computing iit madraas\nquantum computing ibm\nquantum computing by KAIST\nGoogle data analytics`,
+        
+            "project": () => `Project 1: Lunar Lander Simulator \nProject 2: Mushroom classifier {binary}`,
+            "contact": () => `Email: aditya.suman2564@email.com\nGitHub: github.com/yourusername\nLinkedIn: linkedin.com/in/yourprofile`,
+            "clear": () => { terminal.innerHTML = ''; return ''; },
+            "code": () => {
+                window.open('https://leetcode.com/adityasuman2564h', '_blank');
+                return "Lauched Leetcode"}, 
+            "git": () => {
+                window.open('https://github.com/yourusername', '_blank');
+                return "Opening GitHub profile..."}, 
+            "kg": () => {
+                window.open('https://github.com/yourusername', '_blank');
+                return "Launced kaggle"}, 
+            "theme": (args) => {
+                const colors = {
+                    'matrix': { bg: '#1a1a1a', text: '#00ff00' },
+                    'dark': { bg: '#000000', text: '#ffffff' },
+                    'light': { bg: '#ffffff', text: '#000000' },
+                    'vampire': { bg: '#000000', text: '#ff0000' },
+                    'tron': { bg: '#000000', text: '#4DFFFF' },
+                    'newspaper': { bg: '#EAEAEA', text: '#000000' },
+                    
+                };
+                if (args[0] in colors) {
+                    terminal.style.backgroundColor = colors[args[0]].bg;
+                    terminal.style.color = colors[args[0]].text;
+                    return `Theme changed to ${args[0]}`;
+                }
+                return `Available themes: ${Object.keys(colors).join(', ')}`;
+            },
+            "sudo": () => "Nice try! ",
+            "launch": (args) => {
+                const colors = {
+                    '1': window.open('https://leetcode.com/adityasuman2564h', '_blank'),
+                    '2': window.open('https://leetcode.com/adityasuman2564h', '_blank'),
+                    '3': window.open('https://leetcode.com/adityasuman2564h', '_blank'),
+                    '4': window.open('https://leetcode.com/adityasuman2564h', '_blank'),
+                    '5': window.open('https://leetcode.com/adityasuman2564h', '_blank'),
+                    '7': window.open('https://leetcode.com/adityasuman2564h', '_blank'),
+                    '8': window.open('https://leetcode.com/adityasuman2564h', '_blank'),
+                    '9': window.open('https://leetcode.com/adityasuman2564h', '_blank'),
+                    
+                };
+               
+            },
+            
+        };
+        
+        function printPrompt() {
+            const line = document.createElement('div');
+            line.className = 'input-line';
+            line.innerHTML = `
+                <span class="prompt">${currentDirectory}$</span>
+                <input type="text" id="input" spellcheck="false">
+            `;
+            terminal.appendChild(line);
+            
+            const input = line.querySelector('#input');
+            input.focus();
+            
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    const command = input.value.trim();
+                    input.disabled = true;
+                    handleCommand(command);
+                }
+            });
+        }
+        
+        function handleCommand(command) {
+            const [cmd, ...args] = command.split(' ');
+            const output = document.createElement('div');
+            output.className = 'terminal-output';
+            
+            if (commands[cmd]) {
+                const result = commands[cmd](args);
+                if (result) output.textContent = result;
+            } else {
+                output.textContent = `Command not found: ${cmd}. Type 'help' for available commands.`;
+            }
+            
+            terminal.appendChild(output);
+            printPrompt();
+            terminal.scrollTop = terminal.scrollHeight;
+        }
+        
+        // Initial setup
+        terminal.innerHTML = `
+            <div class="terminal-output">
+>/  <br>
+Type -> 'help' 
+            </div>
+        `;
+        printPrompt();
+        </script>
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+</body> 
 </html>
-<!--wash bin 
+<!--wash bin waste code that can be usefull
 leet code waste 
          <p>
             <strong></strong><br>
@@ -528,5 +1438,84 @@ leet code waste
             <img src="" alt="LeetCode Progress Heatmap" class="img-fluid shadow-image">
         </div>
     </div>
+
+
+* contact form is here 
+<section id="contact" class="container my-5">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</section>
+
+testimonials 
+<section id="testimonials" class="container my-5">
+    <h2 class="text-center mb-4">Testimonials</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">"Aditya is an exceptional developer with a deep understanding of quantum computing."</p>
+                    <footer class="blockquote-footer">John Doe, <cite>Professor</cite></footer>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">"His work on machine learning models is truly innovative."</p>
+                    <footer class="blockquote-footer">Jane Smith, <cite>Colleague</cite></footer>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">"Aditya's contributions to open-source projects are commendable."</p>
+                    <footer class="blockquote-footer">Alex Johnson, <cite>Open-Source Contributor</cite></footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<li class="list-inline-item badge badge-primary fs-4 py-3 px-3">ADITYA SUMAN</li>
+
+
+
+<section id="leetcode" class="container my-5">
+    <h2 class="text-center">LeetCode Progress</h2>
+    <p class="text-center mb-4">
+  
+    </p>
+
+    <div class="row justify-content-center">
+       
+  
+   <div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+        <img src="spedomete.png" alt="LeetCode Progress Summary" class="img-fluid shadow-image" style="width: 1000px; height: auto;">
+    </div>
+</div>
+  
+    <div class="text-center mt-4">
+        <h4></h4>
+    
+        <a href="https://leetcode.com/xyz" target="_blank" class="btn">
+             LeetCode
+        </a>
+    </div>
+</section>
 
 -->
