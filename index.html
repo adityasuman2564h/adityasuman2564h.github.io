@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>website-version-t14</title>
+    <title>iteration15</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Font Awesome for Icons -->
@@ -187,7 +187,7 @@ body {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About / work experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vanilla">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#repository">Quantum Computing</a></li>
                     <li class = "nav-item"><a class ="nav-link"  href = "#r3" >Case Study</a></li>
                     <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
@@ -352,10 +352,7 @@ __________/____\--...\___ \_||_/ ___[[=]]._______________________-[_I_I_]-______
         <a href="zerozerozero.html"target = "blank" class ="btn">Work Exerience</a>
         
     </section>
-    
-    
-    
-    
+     
   
 </article>
 </section>
@@ -718,6 +715,590 @@ body {
 
 
 
+   
+    
+    <section id="vanilla" class="container my-5">
+        <style>
+            #vanilla {
+                background: #13161e;
+                padding: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+                border-radius: 15px; /* Rounded edges */
+                box-shadow: 5px 5px 15px rgba(0, 0, 0,0.2); /* Soft shadow for better effect */
+            }
+    
+            #vanilla h1 {
+            column-span: all;
+            font-size: 8vw; /* Reduced from 10vw */
+            margin: 0.5rem 0 2rem 0;
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 1rem double rgb(255, 255, 255);
+            font-weight: 900;
+            }
+    
+            @media screen and (min-width: 1200px) {
+            #vanilla  h1 {
+            font-size: 80px; /* Reduced from 130px */
+            
+            }
+            
+            }
+    
+            #vanilla  h2 {
+                color: rgb(240, 63, 63);
+                font-size: 2rem;
+                line-height: 100%;
+            }
+    
+            #vanilla  p {
+                margin: 0 0 1.5rem 0;
+            }
+            
+            #vanilla  h1 + p::first-letter,
+            #vanilla  h2 + p::first-letter {
+                color: beige;
+                background-color: rgb(0, 0, 0);
+                border-radius: 4px;
+                box-shadow: 3px 3px 0 rgb(99, 84, 236);
+                font-size: 250%;
+                padding: 0 0.5rem;
+                margin-right: 0.75rem;
+                float: left;
+                transition: 1s;
+            }
+    
+            #vanilla  h2 + p {
+                margin-top: 1rem;
+            }
+    
+            #vanilla  article {
+                columns: 25ch auto;
+                gap: 1rem;
+                border-bottom: 1rem solid rgb(255, 255, 255);
+                padding-bottom: 2rem;
+            }
+    
+            #vanilla  aside {
+                font-size: 0.8rem;
+                font-style: italic;
+                margin-left: 1rem;
+            }
+        </style>
+
+        <style>
+            .card {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                cursor: pointer;
+                overflow: hidden;
+            }
+            
+            .card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            }
+            
+            .hover-3d:hover {
+                transform: perspective(1000px) rotateX(5deg) rotateY(5deg) translateY(-10px);
+            }
+            
+            @keyframes wave {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+            }
+            
+            .glow-on-hover:hover {
+                box-shadow: 0 0 20px rgba(131, 255, 187, 0.5);
+            }
+            
+            .icon-container {
+                transition: transform 0.3s ease;
+            }
+            
+            .card:hover .icon-container {
+                transform: rotate(15deg) scale(1.1);
+            }
+
+            @keyframes pulse {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(3); opacity: 0; }
+}
+
+@keyframes scan {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(200%); }
+}
+
+.circle-button {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.circle-button:hover {
+    transform: translateY(-3px) rotate(45deg);
+    box-shadow: 0 5px 15px rgba(9, 132, 227, 0.3);
+}
+
+.neuron {
+    transition: all 0.3s;
+}
+
+.neuron:hover {
+    background: #3a3a3a !important;
+    transform: translateY(-3px);
+}
+
+.cyber-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(transparent, #0ff, transparent);
+}
+@keyframes glow {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.blinking-cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,255,255,0.2);
+}
+
+.pixel-icon {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+.neon-button:hover {
+    background: rgba(0,255,255,0.2);
+    box-shadow: 0 0 15px #0ff;
+}
+            </style>
+
+
+        <article style="columns: initial !important;">
+            <h1 style="color: rgb(255, 255, 255);">Projects</h1>
+
+        <h2></h2>
+        
+        
+
+        <div class="row">
+            <head>
+                <style>
+                    .train {
+                        font-family: monospace;
+                        white-space: pre;
+                        background: #13161e;
+                        letter-spacing: 0px; /* Reduced horizontal spacing */
+                        line-height: 1.2;
+                        color: #ffffff;
+                        padding: 20px;
+                        font-size: 10px;
+                    }
+                    
+                    .binary {
+                        font-weight: bold;
+                        transition: color 0.3s;
+                    }
+                </style>
+            </head>
+            <body>
+                <pre id="trainAscii" class="train"></pre>
+            
+                <script>
+                    const trainArt = `
+                                                         o    o     o      o    o   o   o   oo  oo  oo  oo}
+                                                              o     o  oo  ooo  oo  ooo ooo  ooo ooo ooo oooooo}
+                                                                             oo  oo   oo  oo  ooo ooo ooo oooo ooooo}
+                                                                                   o    o   o   oo  oo  oo  oooo oooooo}
+                                                                                                   o   o   o   ooo  oo ooooo}
+                                                                                                           S            o ooo}
+                                                                                           _________      sSs                 ++
+                                                                               ___________ |_______|______/-\\___|-|_^_/-\\___||_n
+                                                                        n_____/          \\_ |[][] |----------------------|----|\\
+                                                                        |          (_)      ||     |______________________|_|| ||P
+                                                                        |                   | -----/====+______|| _---====--||- /
+                                                                       q|===================|_|=_/+====+|=====[__]+====+|==[__]-p\\
+                                            ______________________________(_)(_)______(_)(_)_____\\__/_\\__/________\\__/_\\__/_________________________
+                    `; 
+            
+                    function createTrain() {
+                        const lines = trainArt.split('\n').slice(1);
+                        let html = '';
+                        
+                        lines.forEach(line => {
+                            let newLine = '';
+                            for(const char of line) {
+                                if(char === 'o') {
+                                    newLine += '<span class="binary"></span>';
+                                } else {
+                                    newLine += char === '\\' ? '\\\\' : char;
+                                }
+                            }
+                            html += newLine + '\n';
+                        });
+                        
+                        document.getElementById('trainAscii').innerHTML = html;
+            
+                        // Initialize binaries
+                        const binaries = document.querySelectorAll('.binary');
+                        binaries.forEach(bin => {
+                            const value = Math.random() > 0.5 ? '1' : '0';
+                            bin.textContent = value;
+                            bin.style.color = value === '1' ? 'red' : 'blue';
+                            randomFlip(bin);
+                        });
+                    }
+            
+                    function randomFlip(element) {
+                        const delay = Math.random() * 800 + 100;
+                        setTimeout(() => {
+                            const newValue = element.textContent === '0' ? '1' : '0';
+                            element.textContent = newValue;
+                            element.style.color = newValue === '1' ? '#FF474D' : '#ADD8E6';
+                            randomFlip(element);
+                        }, delay);
+                    }
+            
+                    // Initialize the train
+                    createTrain();
+                </script>
+
+
+
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100" style="background: #13161e; border: 2px solid #ffffff;">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Lunar Lander simulation</h5>
+                    <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
+                        Lunar Lander Deep Q-Learning (Reinforcement Learning)
+                    </p>
+                    <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
+                        <!-- White pixel removed -->
+                    </div>
+                    <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <a href="https://github.com/your-username/project1" target="_blank" 
+                           class="btn" 
+                           style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
+                            GitHub
+                        </a>
+                        <a href="lander.html" target="_blank" 
+                           class="btn" 
+                           style="background: #ADD8E6; color: #0f0f0f; border: none; font-family: Arial; padding: 8px;">
+                            Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100" style="background: #13161e; border: 2px solid #ffffff;">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">D-16 Building Transformer From Scratch</h5>
+                    <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
+                        abc
+                    </p>
+                    <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
+                        <!-- White pixel removed -->
+                    </div>
+                    <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <a href="https://github.com/your-username/project1" target="_blank" 
+                           class="btn" 
+                           style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
+                            GitHub
+                        </a>
+                        <!--
+                         <a href="lander.html" target="_blank" 
+                           class="btn" 
+                           style="background: #ADD8E6; color: #0f0f0f; border: none; font-family: Arial; padding: 8px;">
+                            Documentation
+                        </a>
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100" style="background: #13161e; border: 2px solid #ffffff;">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Heart Attack Detection </h5>
+                    <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
+                        abc
+                    </p>
+                    <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
+                        <!-- White pixel removed -->
+                    </div>
+                    <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <a href="https://github.com/your-username/project1" target="_blank" 
+                           class="btn" 
+                           style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
+                            GitHub
+                        </a>
+                        <!--
+                         <a href="lander.html" target="_blank" 
+                           class="btn" 
+                           style="background: #ADD8E6; color: #0f0f0f; border: none; font-family: Arial; padding: 8px;">
+                            Documentation
+                        </a>
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100" style="background: #13161e; border: 2px solid #ffffff;">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Sonar Binary Classification</h5>
+                    <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
+                        using multi layer perceptron 
+                    </p>
+                    <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
+                        <!-- White pixel removed -->
+                    </div>
+                    <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <a href="https://github.com/your-username/project1" target="_blank" 
+                           class="btn" 
+                           style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
+                            GitHub
+                        </a>
+                        <!--
+                         <a href="lander.html" target="_blank" 
+                           class="btn" 
+                           style="background: #ADD8E6; color: #0f0f0f; border: none; font-family: Arial; padding: 8px;">
+                            Documentation
+                        </a>
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100" style="background: #13161e; border: 2px solid #ffffff;">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Mushroom Binary Classifier</h5>
+                    <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
+                        abc
+                    </p>
+                    <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
+                        <!-- White pixel removed -->
+                    </div>
+                    <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <a href="https://github.com/your-username/project1" target="_blank" 
+                           class="btn" 
+                           style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
+                            GitHub
+                        </a>
+                        <!--
+                         <a href="lander.html" target="_blank" 
+                           class="btn" 
+                           style="background: #ADD8E6; color: #0f0f0f; border: none; font-family: Arial; padding: 8px;">
+                            Documentation
+                        </a>
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100" style="background: #13161e; border: 2px solid #ffffff;">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Brain Tumor Classification </h5>
+                    <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
+                        abc
+                    </p>
+                    <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
+                        <!-- White pixel removed -->
+                    </div>
+                    <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <a href="https://github.com/your-username/project1" target="_blank" 
+                           class="btn" 
+                           style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
+                            GitHub
+                        </a>
+                        <!--
+                         <a href="lander.html" target="_blank" 
+                           class="btn" 
+                           style="background: #ADD8E6; color: #0f0f0f; border: none; font-family: Arial; padding: 8px;">
+                            Documentation
+                        </a>
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100" style="background: #13161e; border: 2px solid #ffffff;">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Star-Type Classification</h5>
+                    <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
+                        abc
+                    </p>
+                    <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
+                        <!-- White pixel removed -->
+                    </div>
+                    <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <a href="https://github.com/your-username/project1" target="_blank" 
+                           class="btn" 
+                           style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
+                            GitHub
+                        </a>
+                        <!--
+                         <a href="lander.html" target="_blank" 
+                           class="btn" 
+                           style="background: #ADD8E6; color: #0f0f0f; border: none; font-family: Arial; padding: 8px;">
+                            Documentation
+                        </a>
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100" style="background: #13161e; border: 2px solid #ffffff;">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Adversarial Attack Estimation</h5>
+                    <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
+                        abc
+                    </p>
+                    <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
+                        <!-- White pixel removed -->
+                    </div>
+                    <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <a href="https://github.com/your-username/project1" target="_blank" 
+                           class="btn" 
+                           style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
+                            GitHub
+                        </a>
+                        <!--
+                         <a href="lander.html" target="_blank" 
+                           class="btn" 
+                           style="background: #ADD8E6; color: #0f0f0f; border: none; font-family: Arial; padding: 8px;">
+                            Documentation
+                        </a>
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100" style="background: #13161e; border: 2px solid #ffffff;">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Conway's Game of Life</h5>
+                    <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
+                        abc
+                    </p>
+                    <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
+                        <!-- White pixel removed -->
+                    </div>
+                    <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <a href="https://github.com/your-username/project1" target="_blank" 
+                           class="btn" 
+                           style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
+                            GitHub
+                        </a>
+                        <!--
+                         <a href="lander.html" target="_blank" 
+                           class="btn" 
+                           style="background: #ADD8E6; color: #0f0f0f; border: none; font-family: Arial; padding: 8px;">
+                            Documentation
+                        </a>
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100" style="background: #13161e; border: 2px solid #ffffff;">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Fine tuning BERT to classify sentiment</h5>
+                    <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
+                        abc
+                    </p>
+                    <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
+                        <!-- White pixel removed -->
+                    </div>
+                    <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <a href="https://github.com/your-username/project1" target="_blank" 
+                           class="btn" 
+                           style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
+                            GitHub
+                        </a>
+                        <!--
+                         <a href="lander.html" target="_blank" 
+                           class="btn" 
+                           style="background: #ADD8E6; color: #0f0f0f; border: none; font-family: Arial; padding: 8px;">
+                            Documentation
+                        </a>
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -729,240 +1310,93 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--projects -->
-<!--projects -->
-<!--projects -->
-<!--projects -->
-<!--projects -->
-
-
-    <!--projects -->
-    <section id="projects" class="container my-5">
-        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Projects</h2>
-        <section></section>
-
+       
+ 
+     
+       
 
      
-
-        <head>
-            <style>
-                .train {
-                    font-family: monospace;
-                    white-space: pre;
-                    background: white;
-                    letter-spacing: 0px; /* Reduced horizontal spacing */
-                    line-height: 1.2;
-                    color: #333;
-                    padding: 20px;
-                }
-                
-                .binary {
-                    font-weight: bold;
-                    transition: color 0.3s;
-                }
-            </style>
-        </head>
-        <body>
-            <pre id="trainAscii" class="train"></pre>
-        
-            <script>
-                const trainArt = `
-                       o    o        o      o    o   o   o   oo  oo  oo  oo}
-                            o     o  oo  ooo  oo  ooo ooo  ooo ooo ooo oooooo}
-                                        oo  oo   oo  oo  ooo ooo ooo oooo ooooo}
-                                                o    o   o   oo  oo  oo  oooo oooooo}
-                                                                o   o   o   ooo  oo ooooo}
-                                                                       S            o ooo}
-                                                       _________      sSs                 ++
-                                           ___________ |_______|______/-\\___|-|_^_/-\\___||_n
-                                    n_____/          \\_ |[][] |----------------------|----|\\
-                                    |          (_)      ||     |______________________|_|| ||P
-                                    |                   | -----/====+______|| _---====--||- /
-                                   q|===================|_|=_/+====+|=====[__]+====+|==[__]-p\\
-                          ____________(_)(_)______(_)(_)_____\\__/_\\__/________\\__/_\\__/_________________________
-                `;
-        
-                function createTrain() {
-                    const lines = trainArt.split('\n').slice(1);
-                    let html = '';
-                    
-                    lines.forEach(line => {
-                        let newLine = '';
-                        for(const char of line) {
-                            if(char === 'o') {
-                                newLine += '<span class="binary"></span>';
-                            } else {
-                                newLine += char === '\\' ? '\\\\' : char;
-                            }
-                        }
-                        html += newLine + '\n';
-                    });
-                    
-                    document.getElementById('trainAscii').innerHTML = html;
-        
-                    // Initialize binaries
-                    const binaries = document.querySelectorAll('.binary');
-                    binaries.forEach(bin => {
-                        const value = Math.random() > 0.5 ? '1' : '0';
-                        bin.textContent = value;
-                        bin.style.color = value === '1' ? 'red' : 'blue';
-                        randomFlip(bin);
-                    });
-                }
-        
-                function randomFlip(element) {
-                    const delay = Math.random() * 800 + 100;
-                    setTimeout(() => {
-                        const newValue = element.textContent === '0' ? '1' : '0';
-                        element.textContent = newValue;
-                        element.style.color = newValue === '1' ? '#FF474D' : '#ADD8E6';
-                        randomFlip(element);
-                    }, delay);
-                }
-        
-                // Initialize the train
-                createTrain();
-            </script>
-
-
-        <div style="height: 60px;"></div> <!-- Spacer -->
-        <section></section>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card w-90 h-100 shadow">
-                    <img src="kanda.png" class="card-img-top" alt="Project 1 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 1: Lunar Lander Simulator</h5>
-                        <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project1" target="_blank" class="btn">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card w-90 h-100 shadow">
-                    <img src="kunbun.png" class="card-img-top" alt="Project 2 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 2: Mushroom Classifier</h5>
-                        <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project2" target="_blank" class="btn">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card w-90 h-100 shadow">
-                    <img src="vinnilla.png" class="card-img-top" alt="Project 3 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 3: Heart Attack Detection</h5>
-                        <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project3" target="_blank" class="btn">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card w-90 h-100 shadow">
-                    <img src="ftg.png" class="card-img-top" alt="Project 4 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 4: Quantum Avoidance Field</h5>
-                        <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project4" target="_blank" class="btn">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card w-90 h-100 shadow">
-                    <img src="krimia.png" class="card-img-top" alt="Project 5 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 5: Wave Function Collapse</h5>
-                        <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project5" target="_blank" class="btn">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card w-90 h-100 shadow">
-                    <img src="codky.png" class="card-img-top" alt="Project 6 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 6: Adversarial Attack Estimation</h5>
-                        <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project6" target="_blank" class="btn">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card w-90 h-100 shadow">
-                    <img src="thebrain.png" class="card-img-top" alt="Project 7 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 7: Brain Tumor Classification </h5>
-                        <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project7" target="_blank" class="btn">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
     
+    
+     
 
-            <div class="col-md-4 mb-4">
-                <div class="card w-90 h-100 shadow">
-                    <img src="jjk.png" class="card-img-top" alt="Project 8 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 9 : Grover Simulation</h5>
-                        <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project6" target="_blank" class="btn">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card w-90 h-100 shadow">
-                    <img src="evo.png" class="card-img-top" alt="Project 8 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 9 :Conway's Game of Life</h5>
-                        <p class="card-text"></p>
-                        <a href="https://github.com/your-username/project6" target="_blank" class="btn"> GitHub</a>
-                    </div>
-                </div>
-            </div>
-          
+ 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-            
+
+
+
+
+<!--
+    
+   
+    <div class="col-md-4 mb-4">
+        <div class="card h-100" style="background: #0f0f0f; border: 2px solid #ff6b6b;">
+            <div class="card-body">
+                <div class="crt-effect" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 2px);"></div>
+                <h5 class="card-title" style="color: #ff6b6b; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Pixel Engine</h5>
+                <p class="card-text" style="color: #ffd93d; margin: 1rem 0;">
+                    Retro-style game development framework with 8-bit physics
+                </p>
+                <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 2px; margin-bottom: 1rem;">
+                    <div class="pixel" style="background: #ff6b6b; aspect-ratio: 1;"></div>
+                   
+                </div>
+                <button class="btn w-100" style="background: #ffd93d; color: #0f0f0f; border: none; font-family: 'Courier New';">
+                    LAUNCH >>
+                </button>
+            </div>
         </div>
-    </section>
-    
+    </div>
 
+       
+        <div class="col-md-4 mb-4">
+            <div class="card h-100" style="background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px;">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="card-title mb-0" style="color: #2d3436;">Bioinformatics Toolkit</h5>
+                        <i  style="color: #FF474D;"></i>
+                    </div>
+                    <p class="card-text" style="color: #636e72; margin-bottom: 1.5rem;">
+                        Advanced DNA sequence analysis and pattern recognition system.
+                    </p>
+                    <div class="sparkline" style="height: 40px; background: #f8f9fa; border-radius: 6px; position: relative; overflow: hidden;">
+                        <div class="wave" style="position: absolute; width: 200%; height: 100%; background: repeating-linear-gradient(-45deg, #FF474D 0px, #FF474D 10px, #ffffff 10px, #ffffff 20px); animation: wave 2s linear infinite;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        
+        <div class="col-md-4 mb-4">
+            <div class="card h-100" style="background: white; border: none; box-shadow: 0 10px 20px rgba(0,0,0,0.04);">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #2d3436; font-weight: 300; letter-spacing: -0.5px;">Code Canvas</h5>
+                    <p class="card-text" style="color: #636e72; margin: 1.5rem 0;">
+                        Visual programming interface with drag-and-drop functionality
+                    </p>
+                    <div class="code-preview" style="height: 120px; background: #f8f9fa; border-radius: 8px; position: relative;">
+                        <div class="code-line" style="position: absolute; width: 80%; height: 4px; background: #dfe6e9; top: 30%; left: 10%;"></div>
+                        <div class="code-line" style="position: absolute; width: 60%; height: 4px; background: #dfe6e9; top: 50%; left: 10%;"></div>
+                        <div class="code-dot" style="position: absolute; width: 12px; height: 12px; background: #0984e3; border-radius: 50%; top: 70%; right: 20%;"></div>
+                    </div>
+                    <div class="d-flex justify-content-end mt-3">
+                        <div class="circle-button" style="width: 40px; height: 40px; background: #0984e3; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+-->
+
+
+
+
+    </article>
+    </section>
 
     <section></section>
     <div style="height: 60px;"></div> <!-- Spacer -->
@@ -1253,6 +1687,10 @@ body {
 
 
 
+<section></section>
+<div style="height: 60px;"></div> <!-- Spacer -->
+<section></section>
+
 
 
 
@@ -1385,6 +1823,7 @@ body {
         <p>Morbi sed nulla at justo vestibulum cursus ut id urna. Etiam accumsan, velit sed feugiat vehicula, nisi tortor iaculis orci, sed bibendum elit urna vel purus. Suspendisse sagittis nisi nec elit convallis, et efficitur sapien venenatis. Curabitur auctor justo sapien, quis tristique neque cursus in. Integer fermentum metus id sapien tristique, a hendrerit lacus blandit. Fusce dictum sem risus, nec blandit ligula fermentum ac. Praesent tincidunt felis sed mi venenatis maximus.</p>
 
         <p>Suspendisse potenti. Quisque sed ex mauris. Aenean rhoncus, tortor at interdum finibus, erat risus scelerisque nisi, non vehicula nisi libero non metus. Integer vel metus a justo viverra pharetra ut ac arcu. Nam blandit nunc justo, vitae gravida ligula luctus nec. Fusce convallis, justo a porttitor ultricies, sapien est fermentum ex, ut ornare tortor lectus ac eros. Integer facilisis risus non neque lacinia scelerisque. Mauris eu turpis eros. Donec tempor nisi a odio posuere ultricies. Nullam malesuada dui sit amet tortor varius fringilla.</p>
+        
     </article>
     </section>
 
@@ -1683,7 +2122,9 @@ body {
 
 
 
-<section class="ascii-container">
+
+<!--
+    <section class="ascii-container">
     <style>
         .ascii-container {
             all: initial;
@@ -1791,6 +2232,7 @@ body {
     </section>
 
 
+-->
 
 
 
@@ -2075,7 +2517,7 @@ textarea:hover {
     <h2>Download My Resume / Visit My Blog</h2>
     <p></p>
     <a href="path/to/your-resume.pdf" class="btn" download>Download</a>
-    <a href="https://youtube.com" target="_blank" class="btn">Visit My Blog</a>
+    <a href="https://www.youtube.com/" target="_blank" class="btn">Visit My Blog</a>
     
 </section>
 
@@ -2168,7 +2610,7 @@ textarea:hover {
 
         <div class="content-container">
                 <div class="image-box">
-                    <img src="Subject.png" alt="Quantum Computing"  style="width: px; height: auto;">
+                    <img src="Imageproxy_29.webp" alt="Quantum Computing"  style="width: px; height: auto;">
 
                 </div>
         </div>
@@ -2300,7 +2742,23 @@ textarea:hover {
 `,
 
 
+"wormhole": () => `            	
 
+      _____________________        
+     /                    /        
+    /     .  |  .        /              
+   /     : \\ | / :      /               
+  /       '-___-'      /              
+ /____________________/  
+      ______| |____________
+     /      |_|		  /
+    /       F J          /               
+   /       F   J        /                  
+  /       '-___-'      /                   
+ /____________________/ 
+
+
+            `,
 
 
 
