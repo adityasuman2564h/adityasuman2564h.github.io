@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="floppylogo.png">
+
     <title>iteration15</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -117,7 +119,7 @@
 
 /* Add shadow to the image */
 .shadow-image {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* You can adjust the values for a stronger/weaker shadow */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.01); /* You can adjust the values for a stronger/weaker shadow */
     border-radius: 8px; /* Optional: Add rounded corners to the image */
 }
 
@@ -143,6 +145,7 @@ button:hover, .btn:hover {
 .card {
     border-radius: 10px; /* Slightly rounded edges */
     overflow: hidden; /* Keeps image within rounded edges */
+    background-color: rgba(255, 255, 255, 0.2); /* Light blue with transparency */
 }
 
 .card-img-top {
@@ -160,7 +163,7 @@ body {
 }
 
 .badge-primary {
-    background-color: #6eaffa !important; /* Change to your desired color */
+    background-color: rgb(101,2,66) !important; /* Change to your desired color */
     color: rgb(255, 255, 255); /* Change text color if needed */
 }
 #personal-details a {
@@ -225,18 +228,19 @@ body {
 
 
 
-<section id="quantum" class="container my-5">
+<section id="jinni" class="container my-5">
     <style>
-        #quantum {
-            background: beige;
+        #jinni {
+            background:	rgb(249, 249, 249 ,0.01);
             padding: 2rem;
             max-width: 1200px;
             margin: 0 auto;
             border-radius: 15px; /* Rounded edges */
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for better effect */
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+/* Soft shadow for better effect */
         }
 
-        #quantum h1 {
+        #jinni h1 {
         column-span: all;
         font-size: 8vw; /* Reduced from 10vw */
         margin: 0.5rem 0 2rem 0;
@@ -247,23 +251,23 @@ body {
         }
 
         @media screen and (min-width: 1200px) {
-        #quantum h1 {
+        #jinni h1 {
         font-size: 80px; /* Reduced from 130px */
         }
         }
 
-        #quantum h2 {
-            color: rgb(240, 63, 63);
+        #jinni h2 {
+            color: rgb(101,2,66);
             font-size: 2rem;
             line-height: 100%;
         }
 
-        #quantum p {
+        #jinni p {
             margin: 0 0 1.5rem 0;
         }
 
-        #quantum h1 + p::first-letter,
-        #quantum h2 + p::first-letter {
+        #jinni h1 + p::first-letter,
+        #jinni h2 + p::first-letter {
             color: beige;
             background-color: black;
             border-radius: 4px;
@@ -275,28 +279,31 @@ body {
             transition: 1s;
         }
 
-        #quantum h2 + p {
+        #jinni h2 + p {
             margin-top: 1rem;
+            color: rgb(0, 0, 0);
         }
 
-        #quantum article {
+        #jinni article {
             columns: 25ch auto;
             gap: 1rem;
             border-bottom: 1rem solid black;
             padding-bottom: 2rem;
         }
 
-        #quantum aside {
+        #jinni aside {
             font-size: 0.8rem;
             font-style: italic;
             margin-left: 1rem;
-        }
+        } 
     </style>
     
     <article style="columns: initial !important;">
     <h1>About Me</h1>
     <h2>Aditya Suman Sengar , 20</h2>
     <p>I am a passionate and driven individual with a deep interest in computer science, machine learning, artificial intelligence, and quantum computing. My curiosity fuels my desire to explore the cutting-edge advancements in these fields, pushing me to continually learn, innovate, and expand my understanding of complex systems. I am fascinated by the potential of intelligent algorithms and quantum technologies to revolutionize industries, solve intricate problems, and redefine the way we interact with the digital world. My goal is to leverage my skills, creativity, and technical expertise to develop groundbreaking solutions that contribute to the evolution of computing. Whether it's designing efficient machine learning models, optimizing quantum algorithms, or exploring novel AI architectures, I am committed to pushing the boundaries of technology and shaping a future driven by intelligent and powerful computational systems.</p>
+
+
     <p style="white-space: pre; font-family: monospace; line-height: 1.2;">
         .              .           +   .              .   . .     .  .     .              .           +   . 
         .                                       .     .     *       .                                       . 
@@ -329,33 +336,262 @@ __________/____\--...\___ \_||_/ ___[[=]]._______________________-[_I_I_]-______
 </p>
 
 
-        
-    <h3>Skills</h3>
+      
+
+    <h3>skills</h3>
 
 
-    <ul class="skills-list">
+
+
+
+
+    
+     <ul class="skills-list">
         <li class="badge badge-primary">Machine Learning</li>
         <li class="badge badge-primary">Deep Learning - CNNs, NLP, Transformers</li>
         <li class="badge badge-primary">Data Structures And Algorithms</li>
         <li class="badge badge-primary">Quantum Computing</li>
         <li class="badge badge-primary">Data Analysis</li>
         <li class="badge badge-primary"> Containerization </li>
-        <li class="badge badge-primary">ThreeJs</li>
+        <li class="badge badge-primary">CUDA</li>
         <li class="badge badge-primary"> Version Control</li>
         <li class="badge badge-primary">Design</li>
     </ul>
-    
+
     <section id="thenfa" class="container my-5">
         <h2>My Work Experience</h2>
         <p></p>
         
         <a href="zerozerozero.html"target = "blank" class ="btn">Work Exerience</a>
-        
-    </section>
+        <a href="path/to/your-resume.pdf" class="btn" download>view Resume</a>
+     </section>
+
      
   
 </article>
 </section>
+
+
+<!--
+<section>
+    <div class="tech-profile-wrapper">
+        <style>
+            .tech-profile-wrapper {
+                --tp-main-font: "Montserrat", sans-serif;
+                --tp-box-radius: 20px;
+                --tp-border-thickness: 2px;
+                --tp-shadow-depth: 9px;
+                --tp-animate-time: 0.5s;
+                --tp-global-gap: 1rem;
+                --tp-background-color: #6eaffa;
+                --tp-highlight-color: #e55039;
+                --tp-text-dark: #ffffff;
+            }
+    
+            .tech-profile-wrapper * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+                font-family: var(--tp-main-font);
+            }
+    
+            .tech-profile-container {
+                background: var(--tp-background-color);
+                width: 600px;
+                height: 600px;
+                position: relative;
+                filter: drop-shadow(5px 15px 38px rgba(0,0,0,0.2));
+                border-radius: 12px;
+                padding: 21px;
+                margin: 0 auto;
+            }
+    
+            .tp-content-section {
+                width: 100%;
+                height: 100%;
+                border: 1px solid var(--tp-text-dark);
+                border-radius: 7px;
+                padding: 20px 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            .tp-header-title {
+                text-align: center;
+                width: 90%;
+                padding: 4px;
+                border-bottom: 2px solid var(--tp-text-dark);
+                margin-bottom: 19px;
+                padding-bottom: 10px;
+                font-size: 1.2rem;
+            }
+    
+            .tp-filter-controls {
+                margin-top: 0.5rem;
+            }
+    
+            .tp-filter-controls label {
+                font-size: 1.1rem;
+                font-weight: 500;
+                border: 1px solid var(--tp-text-dark);
+                padding: 0.4rem 0.8rem;
+                cursor: pointer;
+                margin: 0.2rem;
+                border-radius: 3rem;
+                transition: all 0.4s ease;
+            }
+    
+            .tp-filter-controls label:hover {
+                background-color: rgba(244,244,244,0.7);
+            }
+    
+            .tp-filter-controls label:has(input:checked) {
+                background-color: var(--tp-text-dark);
+                color: var(--tp-background-color);
+            }
+    
+            .tp-filter-controls input {
+                display: none;
+            }
+    
+            .tp-data-table {
+                width: 90%;
+                margin-top: 24px;
+            }
+    
+            .tech-profile-wrapper table {
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 1.2rem;
+            }
+    
+            .tech-profile-wrapper tbody tr {
+                display: none;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+            }
+    
+            .tech-profile-wrapper td {
+                padding: 0px 7px;
+                height: 31px;
+            }
+    
+            .tech-profile-wrapper td:last-child {
+                text-align: right;
+            }
+    
+            .tp-content-section:has(#tp-show-skills:checked) tbody tr.tp-skills,
+            .tp-content-section:has(#tp-show-languages:checked) tbody tr.tp-languages {
+                display: table-row;
+            }
+    
+            @keyframes tp-fadeIn {
+                0% { opacity: 0; height: 1px; }
+                100% { opacity: 1; height: 31px; }
+            }
+        </style>
+    
+        <div class="tech-profile-container">
+            <div class="tp-content-section">
+                
+                
+                <div class="tp-filter-controls">
+                    <label>Skills
+                        <input id="tp-show-skills" type="radio" name="tp-filter" checked>
+                    </label>
+                    <label>Languages
+                        <input id="tp-show-languages" type="radio" name="tp-filter">
+                    </label>
+                </div>
+    
+                <div class="tp-data-table">
+                    <table>
+                        <tbody>
+                          
+                            <tr class="tp-skills">
+                                <td>Algorithms</td>
+                                <td></td>
+                            </tr>
+                            <tr class="tp-skills">
+                                <td>Machine Learning</td>
+                                <td></td>
+                            </tr>
+                            <tr class="tp-skills">
+                                <td>Deep Learning - CNNs ,NLP</td>
+                                <td></td>
+                            </tr>
+                            <tr class="tp-skills">
+                                <td>Transformer</td>
+                                <td></td>
+                            </tr>
+                            <tr class="tp-skills">
+                                <td>Data Analytics</td>
+                                <td></td>
+                            </tr>
+                            <tr class="tp-skills">
+                                <td>Applied Mathematics</td>
+                                <td></td>
+                            </tr>
+                            <tr class="tp-skills">
+                                <td>UNIX/Linux</td>
+                                <td></td>
+                            </tr>
+                            <tr class="tp-skills">
+                                <td>Containerization</td>
+                                <td></td>
+                            </tr>
+                            <tr class="tp-skills">
+                                <td>Desigen</td>
+                                <td></td>
+                            </tr>
+                            <tr class="tp-skills">
+                                <td>Version Control</td>
+                                <td></td>
+                            </tr>
+    
+                            
+                            <tr class="tp-languages">
+                                <td>C++</td>
+                                <td>
+                                  
+                                </td>
+                            </tr>
+                            <tr class="tp-languages">
+                                <td>Python</td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr class="tp-languages">
+                                <td>R</td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr class="tp-languages">
+                                <td>PyTorch</td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr class="tp-languages">
+                                <td>RasberryPi</td>
+                                <td>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-original.svg"  width="25" height="25"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+-->
+
 
 
 
@@ -557,7 +793,7 @@ body {
                 font-family: 'Courier New', monospace;
                 font-size: 0.9rem;
                 color: #ffffff;
-
+                
 
 
                 &::-webkit-scrollbar {
@@ -725,7 +961,8 @@ body {
                 max-width: 1200px;
                 margin: 0 auto;
                 border-radius: 15px; /* Rounded edges */
-                box-shadow: 5px 5px 15px rgba(0, 0, 0,0.2); /* Soft shadow for better effect */
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+ /* Soft shadow for better effect */
             }
     
             #vanilla h1 {
@@ -787,111 +1024,8 @@ body {
             }
         </style>
 
-        <style>
-            .card {
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-                cursor: pointer;
-                overflow: hidden;
-            }
-            
-            .card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            }
-            
-            .hover-3d:hover {
-                transform: perspective(1000px) rotateX(5deg) rotateY(5deg) translateY(-10px);
-            }
-            
-            @keyframes wave {
-                0% { transform: translateX(0); }
-                100% { transform: translateX(-50%); }
-            }
-            
-            .glow-on-hover:hover {
-                box-shadow: 0 0 20px rgba(131, 255, 187, 0.5);
-            }
-            
-            .icon-container {
-                transition: transform 0.3s ease;
-            }
-            
-            .card:hover .icon-container {
-                transform: rotate(15deg) scale(1.1);
-            }
 
-            @keyframes pulse {
-    0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-    100% { transform: translate(-50%, -50%) scale(3); opacity: 0; }
-}
-
-@keyframes scan {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(200%); }
-}
-
-.circle-button {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.circle-button:hover {
-    transform: translateY(-3px) rotate(45deg);
-    box-shadow: 0 5px 15px rgba(9, 132, 227, 0.3);
-}
-
-.neuron {
-    transition: all 0.3s;
-}
-
-.neuron:hover {
-    background: #3a3a3a !important;
-    transform: translateY(-3px);
-}
-
-.cyber-header::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(transparent, #0ff, transparent);
-}
-@keyframes glow {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
-}
-
-.blinking-cursor {
-    animation: blink 1s infinite;
-}
-
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-.card {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,255,255,0.2);
-}
-
-.pixel-icon {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-}
-
-.neon-button:hover {
-    background: rgba(0,255,255,0.2);
-    box-shadow: 0 0 15px #0ff;
-}
-            </style>
-
-
+<!--
         <article style="columns: initial !important;">
             <h1 style="color: rgb(255, 255, 255);">Projects</h1>
 
@@ -981,9 +1115,18 @@ body {
                     createTrain();
                 </script>
 
+-->
 
 
 
+<article style="columns: initial !important;">
+    <h1 style="color: rgb(255, 255, 255);">key Projects</h1>
+
+<h2></h2>
+
+
+
+<div class="row">
         <div class="col-md-4 mb-4">
             <div class="card h-100" style="background: #13161e; border: 2px solid #ffffff;">
                 <div class="card-body d-flex flex-column">
@@ -996,7 +1139,7 @@ body {
                         <!-- White pixel removed -->
                     </div>
                     <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                        <a href="https://github.com/your-username/project1" target="_blank" 
+                        <a href="djimmi.html" target="_blank" 
                            class="btn" 
                            style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
                             GitHub
@@ -1018,13 +1161,13 @@ body {
                     
                     <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">D-16 Building Transformer From Scratch</h5>
                     <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
-                        abc
+                        using Numpy and torch.nn
                     </p>
                     <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
                         <!-- White pixel removed -->
                     </div>
                     <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                        <a href="https://github.com/your-username/project1" target="_blank" 
+                        <a href="djimmi.html" target="_blank" 
                            class="btn" 
                            style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
                             GitHub
@@ -1049,13 +1192,14 @@ body {
                     
                     <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Heart Attack Detection </h5>
                     <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
-                        abc
+                        Using Genetic Algorithm For feature selection 
+
                     </p>
                     <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
                         <!-- White pixel removed -->
                     </div>
                     <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                        <a href="https://github.com/your-username/project1" target="_blank" 
+                        <a href="djimmi.html" target="_blank" 
                            class="btn" 
                            style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
                             GitHub
@@ -1087,7 +1231,7 @@ body {
                         <!-- White pixel removed -->
                     </div>
                     <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                        <a href="https://github.com/your-username/project1" target="_blank" 
+                        <a href="djimmi.html" target="_blank" 
                            class="btn" 
                            style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
                             GitHub
@@ -1113,13 +1257,13 @@ body {
                     
                     <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Mushroom Binary Classifier</h5>
                     <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
-                        abc
+                        Classify Posionouts And Non-poisonous Mushrooms 
                     </p>
                     <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
                         <!-- White pixel removed -->
                     </div>
                     <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                        <a href="https://github.com/your-username/project1" target="_blank" 
+                        <a href="djimmi.html" target="_blank" 
                            class="btn" 
                            style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
                             GitHub
@@ -1145,13 +1289,13 @@ body {
                     
                     <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Brain Tumor Classification </h5>
                     <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
-                        abc
+                        Using Transfer-Learning
                     </p>
                     <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
                         <!-- White pixel removed -->
                     </div>
                     <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                        <a href="https://github.com/your-username/project1" target="_blank" 
+                        <a href="djimmi.html" target="_blank" 
                            class="btn" 
                            style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
                             GitHub
@@ -1177,13 +1321,13 @@ body {
                     
                     <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Star-Type Classification</h5>
                     <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
-                        abc
+                        predicts the type of the star 
                     </p>
                     <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
                         <!-- White pixel removed -->
                     </div>
                     <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                        <a href="https://github.com/your-username/project1" target="_blank" 
+                        <a href="djimmi.html" target="_blank" 
                            class="btn" 
                            style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
                             GitHub
@@ -1202,36 +1346,6 @@ body {
         </div>
 
 
-
-        <div class="col-md-4 mb-4">
-            <div class="card h-100" style="background: #13161e; border: 2px solid #ffffff;">
-                <div class="card-body d-flex flex-column">
-                    
-                    <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Adversarial Attack Estimation</h5>
-                    <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
-                        abc
-                    </p>
-                    <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
-                        <!-- White pixel removed -->
-                    </div>
-                    <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                        <a href="https://github.com/your-username/project1" target="_blank" 
-                           class="btn" 
-                           style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
-                            GitHub
-                        </a>
-                        <!--
-                         <a href="lander.html" target="_blank" 
-                           class="btn" 
-                           style="background: #ADD8E6; color: #0f0f0f; border: none; font-family: Arial; padding: 8px;">
-                            Documentation
-                        </a>
-                        -->
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
 
@@ -1241,13 +1355,13 @@ body {
                     
                     <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Conway's Game of Life</h5>
                     <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
-                        abc
+                        simulation
                     </p>
                     <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
                         <!-- White pixel removed -->
                     </div>
                     <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                        <a href="https://github.com/your-username/project1" target="_blank" 
+                        <a href="djimmi.html" target="_blank" 
                            class="btn" 
                            style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
                             GitHub
@@ -1276,13 +1390,13 @@ body {
                     
                     <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Fine tuning BERT to classify sentiment</h5>
                     <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
-                        abc
+                        abcd.....
                     </p>
                     <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
                         <!-- White pixel removed -->
                     </div>
                     <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                        <a href="https://github.com/your-username/project1" target="_blank" 
+                        <a href="djimmi.html" target="_blank" 
                            class="btn" 
                            style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
                             GitHub
@@ -1299,26 +1413,6 @@ body {
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-       
- 
-     
-       
-
-     
-    
-    
-     
 
  
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -1390,6 +1484,37 @@ body {
             </div>
         </div>
     
+        
+        <div class="col-md-4 mb-4">
+            <div class="card h-100" style="background: #13161e; border: 2px solid #ffffff;">
+                <div class="card-body d-flex flex-column">
+                    
+                    <h5 class="card-title" style="color: #ffffff; text-shadow: 0 0 10px rgba(255,107,107,0.5);">Adversarial Attack Estimation</h5>
+                    <p class="card-text" style="color: #ffffff; margin: 1rem 0;">
+                        abc
+                    </p>
+                    <div class="pixel-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 0px; margin-bottom: 1rem;">
+                        >
+                    </div>
+                    <div class="mt-auto" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <a href="https://github.com/your-username/project1" target="_blank" 
+                           class="btn" 
+                           style="background: #FF474D; color: #0f0f0f; border: none; font-family: 'Arial'; padding: 8px;">
+                            GitHub
+                        </a>
+                       
+                         <a href="lander.html" target="_blank" 
+                           class="btn" 
+                           style="background: #ADD8E6; color: #0f0f0f; border: none; font-family: Arial; padding: 8px;">
+                            Documentation
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
 -->
 
 
@@ -1644,6 +1769,11 @@ body {
             <span class="monokai-white"><span class="monokai-red">&nbsp;&nbsp;Check out my GitHub repository for quantum computing coding notebooks.</span><span class="monokai-teal"></span> <span class="monokai-red">></span> <span class="monokai-violet"></span></span>
           </li>
 
+          <li>
+            <span class="monokai-white"><span class="monokai-yellow">&nbsp;&nbsp;Qubit visualization</span><span class="monokai-teal"></span> <span class="monokai-red">></span> <span class="monokai-violet"></span></span>
+          </li>
+          
+          
           
 
 
@@ -1721,12 +1851,12 @@ body {
     <section id="quantum" class="container my-5">
         <style>
             #quantum {
-                background: beige;
+                background: rgb(255, 255, 255);
                 padding: 2rem;
                 max-width: 1200px;
                 margin: 0 auto;
                 border-radius: 15px; /* Rounded edges */
-                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for better effect */
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for better effect */
             }
     
             #quantum h1 {
@@ -1966,21 +2096,29 @@ body {
 
    
     <section id = 'r3' class = "container my-5">
+       
         <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Case Study</h2>
         <div style="height: 60px;"></div> <!-- Spacer -->
         <div class = "row ">
-        <div class="col-md-4 mb-4">
-            <div class="card shadow">
-                <img src="microchip.png" class="card-img-top" alt="Research Paper Image 1">
-                <div class="card-body">
-                    <h5 class="card-title">Microsoft's Majorana 1 chip</h5>
-                    <p class="card-text"></p>
-                    <a href="link-to-paper1.pdf" target="_blank" class="btn">Read Case Study</a>
-                </div>
-            </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card shadow">
+            
+            
+<div class="col-md-4 mb-4">
+    <div class="card h-100 shadow research-card">
+        <img src="microchip.png" class="card-img-top" alt="Quantum Computing Chip">
+        <div class="card-body">
+            <h5 class="card-title">Microsoft's Majorana 1 Chip</h5>
+            <p class="card-text text-secondary mb-3"></p>
+            <a href="link-to-paper1.pdf" target="_blank" class="btn">
+                <span class="mr-2">Read Case Study</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--
+ <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow">
                     <img src="ibmchip.png" class="card-img-top" alt="Research Paper Image 2">
                     <div class="card-body">
                         <h5 class="card-title">IBM quantum chip case study</h5>
@@ -1989,8 +2127,12 @@ body {
                     </div>
                 </div>
             </div>
+
+
+
+             
             <div class="col-md-4 mb-4">
-                <div class="card shadow">
+                <div class="card  h-100 shadow">
                     <img src="willowchip.png" class="card-img-top" alt="Research Paper Image 1">
                     <div class="card-body">
                         <h5 class="card-title">Willow Chip case study</h5>
@@ -1999,8 +2141,11 @@ body {
                     </div>
                 </div>
                 </div>
+-->
+
+         
                 <div class="col-md-4 mb-4">
-                    <div class="card shadow">
+                    <div class="card h-100 shadow">
                         <img src="intotheunknown.png" class="card-img-top" alt="Research Paper Image 1">
                         <div class="card-body">
                             <h5 class="card-title">DeepSeek case study</h5>
@@ -2010,7 +2155,7 @@ body {
                     </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card shadow">
+                        <div class="card h-100 shadow">
                             <img src="hopper.png" class="card-img-top" alt="Research Paper Image 1">
                             <div class="card-body">
                                 <h5 class="card-title">NVIDIA H100 Tensor Core GPU</h5>
