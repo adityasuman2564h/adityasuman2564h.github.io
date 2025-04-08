@@ -17,9 +17,9 @@
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
-    color: #000000;
+    color: #ffffff;
     overflow-x: hidden;
-    background: #ffffff;
+    background: #181a1b;
 }
 
 
@@ -50,7 +50,7 @@ p.lead{
     line-height: 24px;
     font-family: 'Open Sans', sans-serif;
 }
-a{ color: #DE5E60;}
+a{ color: #ffffff;}
 a:hover,
 a:focus{
     text-decoration: none;
@@ -602,10 +602,37 @@ a.fa.fa-angle-down:hover{
               <li><a href="#repository" class="scroll-nav">Quantum computing</a></li>
               <li><a href="#topological" class="scroll-nav">Case study</a></li>
               <li><a href="#dor" class="scroll-nav">Resume/Blog</a></li>
+
+              <li>
+
+                <a href="#" class ="btn" onclick="openGmailCompose(event)">
+                  Contact Me 
+                  <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail Logo" width="20" height="18"></a>
+              <script>
+              function openGmailCompose(event) {
+                event.preventDefault();
+                const yourEmail = 'aditya.suman2564@gmail.com'; // Your email
+                const subject = 'Opportunity Inquiry';
+                const body = `body { }
+             
+                `;
+              
+                // Gmail compose URL structure
+                const gmailUrl = `https://mail.google.com/mail/?view=cm&to=${yourEmail}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                
+                // Open in new tab
+                window.open(gmailUrl, '_blank');
+              }
+              </script>
+      
+
+              </li>
+              
           </ul>
       </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
 <div id="home" class="text-center">
   <div class="layer">
       <div class="content">
@@ -619,6 +646,7 @@ a.fa.fa-angle-down:hover{
   </div>
 
 </div>
+
 
 
 <div id="about">
@@ -661,6 +689,245 @@ a.fa.fa-angle-down:hover{
   </div>
 
 </div>
+
+
+
+
+<section id="writerr" class="container my-5">
+  <style>
+
+.continue-application {
+--color: #fff;
+--background: #222425;
+--background-hover: #222425;
+--background-left: #2b2d2e;
+--folder: #F3E9CB;
+--folder-inner: #BEB393;
+--paper: #FFFFFF;
+--paper-lines: #BBC1E1;
+--paper-behind: #E1E6F9;
+--pencil-cap: #fff;
+--pencil-top: #275EFE;
+--pencil-middle: #fff;
+--pencil-bottom: #5C86FF;
+--shadow: rgba(13, 15, 25, .2);
+border: none;
+outline: none;
+cursor: pointer;
+position: relative;
+border-radius: 5px;
+font-size: 14px;
+font-weight: 500;
+line-height: 19px;
+
+-webkit-tap-highlight-color: transparent;
+padding: 17px 29px 17px 69px;
+
+color: var(--color);
+background: var(--bg, var(--background));
+}
+
+.continue-application > div {
+top: 0;
+left: 0;
+bottom: 0;
+width: 53px;
+position: absolute;
+overflow: hidden;
+border-radius: 5px 0 0 5px;
+background: var(--background-left);
+}
+
+.continue-application > div .folder {
+width: 23px;
+height: 27px;
+position: absolute;
+left: 15px;
+top: 13px;
+}
+
+.continue-application > div .folder .top {
+left: 0;
+top: 0;
+z-index: 2;
+position: absolute;
+transform: translateX(var(--fx, 0));
+transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder .top svg {
+width: 24px;
+height: 27px;
+display: block;
+fill: var(--folder);
+transform-origin: 0 50%;
+transition: transform 0.3s ease var(--fds, 0.45s);
+transform: perspective(120px) rotateY(var(--fr, 0deg));
+}
+
+.continue-application > div .folder:before, .continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+content: "";
+position: absolute;
+left: var(--l, 0);
+top: var(--t, 0);
+width: var(--w, 100%);
+height: var(--h, 100%);
+border-radius: 1px;
+background: var(--b, var(--folder-inner));
+}
+
+.continue-application > div .folder:before {
+box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
+transform: translateX(var(--fx, 0));
+transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+--l: 1px;
+--t: 1px;
+--w: 21px;
+--h: 25px;
+--b: var(--paper-behind);
+}
+
+.continue-application > div .folder:after {
+transform: translate(var(--pbx, 0), var(--pby, 0));
+transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .folder .paper {
+z-index: 1;
+--b: var(--paper);
+}
+
+.continue-application > div .folder .paper:before, .continue-application > div .folder .paper:after {
+content: "";
+width: var(--wp, 14px);
+height: 2px;
+border-radius: 1px;
+transform: scaleY(0.5);
+left: 3px;
+top: var(--tp, 3px);
+position: absolute;
+background: var(--paper-lines);
+box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
+}
+
+.continue-application > div .folder .paper:after {
+--tp: 6px;
+--wp: 10px;
+}
+
+.continue-application > div .pencil {
+height: 2px;
+width: 3px;
+border-radius: 1px 1px 0 0;
+top: 8px;
+left: 105%;
+position: absolute;
+z-index: 3;
+transform-origin: 50% 19px;
+background: var(--pencil-cap);
+transform: translateX(var(--pex, 0)) rotate(35deg);
+transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .pencil:before, .continue-application > div .pencil:after {
+content: "";
+position: absolute;
+display: block;
+background: var(--b, linear-gradient(var(--pencil-top) 55%, var(--pencil-middle) 55.1%, var(--pencil-middle) 60%, var(--pencil-bottom) 60.1%));
+width: var(--w, 5px);
+height: var(--h, 20px);
+border-radius: var(--br, 2px 2px 0 0);
+top: var(--t, 2px);
+left: var(--l, -1px);
+}
+
+.continue-application > div .pencil:before {
+-webkit-clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+}
+
+.continue-application > div .pencil:after {
+--b: none;
+--w: 3px;
+--h: 6px;
+--br: 0 2px 1px 0;
+--t: 3px;
+--l: 3px;
+border-top: 1px solid var(--pencil-top);
+border-right: 1px solid var(--pencil-top);
+}
+
+.continue-application:before, .continue-application:after {
+content: "";
+position: absolute;
+width: 10px;
+height: 2px;
+border-radius: 1px;
+background: var(--color);
+transform-origin: 9px 1px;
+transform: translateX(var(--cx, 0)) scale(0.5) rotate(var(--r, -45deg));
+top: 26px;
+right: 16px;
+transition: transform 0.3s;
+}
+
+.continue-application:after {
+--r: 45deg;
+}
+
+.continue-application:hover {
+--cx: 2px;
+--bg: var(--background-hover);
+--fx: -40px;
+--fr: -60deg;
+--fd: .15s;
+--fds: 0s;
+--pbx: 3px;
+--pby: -3px;
+--pbd: .15s;
+--pex: -24px;
+}
+
+
+  </style>
+<a href="saturnearth.html" target="_blank" class="continue-application">
+  <div>
+    <div class="pencil"></div>
+    <div class="folder">
+      <div class="top">
+        <svg viewBox="0 0 24 27">
+          <path d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"></path>
+        </svg>
+      </div>
+      <div class="paper"></div>
+    </div>
+  </div>
+  View My Work Experience
+</a>
+
+
+
+</section>
+
+
+
+
+
+<section></section>
+<div style="height: 60px;"></div> <!-- Spacer -->
+<section></section>
+
+
+
+
+
+
+
 <section id="pccounter" class="container my-5">
   <style>
     .ascii-art {
@@ -669,8 +936,8 @@ a.fa.fa-angle-down:hover{
       letter-spacing: 0px;
       line-height: 1.2;
       font-family: monospace;
-      color: rgb(0, 0, 0);
-      background-color: rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
+      background-color: #181a1b;
       padding: 1rem;
       text-align: center;
       display: block;
@@ -770,7 +1037,7 @@ _____________________________    ____________________________    _______________
       .terminal-container {
           max-width: 1400px;
           margin: 2rem auto;
-          background-color: #ffffff;
+          background-color: #181a1b;
           border-radius: 8px;
           box-shadow: 0 0 20px rgba(0,255,0,0.1);
           border: 0.01px solid #a1a1a1
@@ -782,7 +1049,7 @@ _____________________________    ____________________________    _______________
           overflow-y: auto;
           font-family: 'Courier New', monospace;
           font-size: 12px;
-          color: #000000;
+          color: #ffffff;
           
 
 
@@ -800,7 +1067,7 @@ _____________________________    ____________________________    _______________
       }
       
       .prompt {
-          color: #000000;
+          color: #ffffff;
       }
       
       #input {
@@ -845,7 +1112,7 @@ _____________________________    ____________________________    _______________
           align-items: center;
           justify-content: space-between;
           padding: 8px 12px;
-          background: #f8f8f8;
+          background: #1b1e1f;
           border-radius: 8px 8px 0 0;
           border-bottom: 1px solid #1a1a1a;
           border: 0.01px solid #a0a0a0
@@ -868,7 +1135,7 @@ _____________________________    ____________________________    _______________
       .maximize { background: #ff4545; }
       
       .title-text {
-          color: #000000;
+          color: #ffffff;
           font-family: Arial, sans-serif;
           font-size: 12px;
           opacity: 0.8;
@@ -1117,7 +1384,8 @@ _______________________________________________________________________
       <style>
   
   #djimmi strong {
-              color: rgb(101,2,66);
+              color:  rgb(231, 85, 85);
+                
               
               line-height: 100%;
           }
@@ -1158,7 +1426,7 @@ _______________________________________________________________________
   
 <br>
 <br>
-  
+
 
 
   <section id = "vanilla" class ="container my-5">
@@ -1166,7 +1434,7 @@ _______________________________________________________________________
         <style>
    
     #vanilla strong {
-                color: rgb(101,2,66);
+                color: rgb(231, 85, 85);
                 
                 line-height: 100%;
             }
@@ -1246,12 +1514,678 @@ _______________________________________________________________________
               <a href="https://github.com/your-username" target="_blank" class="btn">GitHub</a>
               <a href="lander.html"target = "blank" class ="btn">Documentation</a><br>
 
+              12.<strong>Star Type Detection</strong> categorization <var> - Machine Learning</var><br>
+              <a href="https://github.com/your-username" target="_blank" class="btn">GitHub</a>
+              <a href="lander.html"target = "blank" class ="btn">Documentation</a><br>
+
              
             
     
         </ul>
     </body>
     </section>
+    <section></section>
+    <div style="height: 60px;"></div> <!-- Spacer -->
+    <section></section>
+    
+        
+  
+    <!-- Spacer 
+     <section id="kinggit" class="container my-5" >
+    <style>
+
+    /* Add this first to prevent conflicts */
+    #kinggit * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #kinggit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+
+*/
+
+  #kinggit .card-container {
+    font-family: 'DejaVu Sans Mono', Menlo, monospace;
+
+    
+  position: relative;
+  width: 1400px;
+  height: 300px;
+  border-radius: 1em;
+  margin: 0 2em;
+}
+
+#kinggit .card-border {
+  position: absolute;
+  inset: 0;
+  background: #0005;
+  border-radius: inherit;
+}
+
+#kinggit .card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: #111215;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#kinggit .header {
+  background: #0b0d10;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-bottom: 1px solid #1d1f23;
+}
+
+#kinggit .top-header {
+  background: #0b0d10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  padding-top: 10px;
+}
+
+#kinggit :where(.repo > a, .repo > span) {
+  text-decoration: none;
+  color: #bebebe;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+#kinggit .repo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+} 
+
+#kinggit .repo-slash {
+  font-size: 10px;
+  pointer-events: none;
+}
+
+#kinggit .repo-name {
+  color: #fff;
+  font-weight: 400;
+}
+
+#kinggit .repo > a {
+  position: relative;
+}
+
+#kinggit .repo > a::before {
+  content: "";
+  position: absolute;
+  inset: -2px -4px;
+  border-radius: 6px;
+  background: hsl(0 0 100 / 7%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#kinggit .repo > a:hover::before {
+  opacity: 1;
+}
+
+#kinggit .gh-icon,
+#kinggit .gh-icon svg {
+  height: 2em;
+  fill: #fff;
+}
+
+#kinggit .space {
+  flex-grow: 1;
+}
+
+#kinggit .icon {
+  cursor: pointer;
+  display: flex;
+  height: 1.5em;
+  width: 1.5em;
+  padding: 0.25em;
+  border-radius: 0.25em;
+  fill: #797d86;
+  outline: 1px solid #303236;
+  transition: 0.3s;
+  /* Add these to center contents */
+  align-items: center;
+  justify-content: center;
+}
+#kinggit .icon:hover {
+  background: hsl(0 0 100 / 7%);
+}
+
+#kinggit .icon svg {
+  width: 1em;
+  height: 1em;
+}
+
+#kinggit .btm-header {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px;
+  gap: 8px;
+  color: #fff;
+  fill: #fff;
+}
+
+#kinggit .tab {
+  position: relative;
+  padding: 4px 4px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  isolation: isolate;
+}
+
+#kinggit .tab-icon {
+  width: 1em;
+  height: 1.25em;
+  fill: #797d86;
+}
+
+#kinggit .tab.active {
+  border-bottom: 2px solid #e98463;
+}
+
+#kinggit .tab::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  border-radius: 8px;
+  opacity: 0;
+  inset: 0;
+  bottom: 8px;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+#kinggit .tab:hover::before {
+  opacity: 0.07;
+}
+
+#kinggit .content {
+  height: 100%;
+  overflow: hidden;
+}
+
+#kinggit .prs::-webkit-scrollbar {
+  width: 0;
+}
+
+#kinggit .prs {
+  margin: 12px;
+  height: calc(100% - 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border: 1px solid #343539;
+  border-radius: 6px;
+  overflow: auto;
+}
+
+#kinggit .pr {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+  outline: 1px solid #343539;
+  padding: 8px;
+}
+
+#kinggit .checkbox {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  border-radius: 2px;
+  outline: 1px solid #343539;
+  transition: 0.3s;
+}
+
+#kinggit .checkbox:hover {
+  background: hsl(0 0 100 / 5%);
+}
+
+#kinggit .checkbox:active {
+  outline-color: #2a2c2f;
+  background: hsl(0 0 100 / 0%);
+}
+
+#kinggit .card input:checked ~ .checkbox {
+  outline-color: #797d86;
+}
+
+#kinggit .card input:checked ~ .checkbox:active {
+  outline-color: #56585c;
+}
+
+#kinggit .card input:checked ~ .checkbox::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  width: 4px;
+  height: 8px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  border-color: #fff;
+  transform: translate(5.5px, 2.5px) rotate(45deg);
+}
+
+#kinggit .pr-icon {
+  display: flex;
+  width: 1em;
+  height: 1em;
+  fill: #63d188;
+}
+
+#kinggit pr-text {
+  display: flex;
+  flex-direction: column;
+}
+
+#kinggit .pr-title {
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#kinggit .pr-title:hover {
+  color: #4493f8;
+}
+
+#kinggit .pr-desc {
+  padding-left: 2px;
+  font-size: 10px;
+  color: #797d86;
+}
+
+
+
+
+
+
+#kinggit .card input {
+  display: none;
+}
+#kinggit .pr-title {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Inherit text color from parent */
+  display: inline-block; /* Maintain layout like a div */
+}
+
+#kinggit .pr-title:hover {
+  color: #4493f8;
+  text-decoration: none; /* Ensure no underline appears on hover */
+}
+
+
+    </style>
+
+    
+    <svg style="position: absolute; width: 0; height: 0;">
+        <filter id="unopaq" y="-100%" height="300%" x="-100%" width="300%">
+          <feColorMatrix
+            values="1 0 0 0 0 
+                  0 1 0 0 0 
+                  0 0 1 0 0 
+                  0 0 0 5 0"
+          ></feColorMatrix>
+        </filter>
+        <filter id="unopaq2" y="-100%" height="300%" x="-100%" width="300%">
+          <feColorMatrix
+            values="1 0 0 0 0 
+                  0 1 0 0 0 
+                  0 0 1 0 0 
+                  0 0 0 10 0"
+          ></feColorMatrix>
+        </filter>
+        <filter id="unopaq3" y="-100%" height="300%" x="-100%" width="300%">
+          <feColorMatrix
+            values="1 0 0 1 0 
+                  0 1 0 1 0 
+                  0 0 1 1 0 
+                  0 0 0 2 0"
+          ></feColorMatrix>
+        </filter>
+      </svg>
+      <div class="card-container">
+        <div class="spin spin-blur"></div>
+        <div class="spin spin-intense"></div>
+        <div class="backdrop"></div>
+        <div class="card-border">
+          <div class="spin spin-inside"></div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <div class="top-header">
+              <div class="icon">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z"
+                  ></path>
+                </svg>
+              </div>
+              <a class="gh-icon" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
+                  ></path>
+                </svg>
+              </a>
+              <div class="repo">
+                <a class="repo-owner" href="#">Adi</a>
+                <span class="repo-slash">/</span>
+                <a class="repo-name" href="#">All projects </a>
+              </div>
+              <div class="space"></div>
+              <div class="icon">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                  <path
+                    d="M2.8 2.06A1.75 1.75 0 0 1 4.41 1h7.18c.7 0 1.333.417 1.61 1.06l2.74 6.395c.04.093.06.194.06.295v4.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-4.5c0-.101.02-.202.06-.295Zm1.61.44a.25.25 0 0 0-.23.152L1.887 8H4.75a.75.75 0 0 1 .6.3L6.625 10h2.75l1.275-1.7a.75.75 0 0 1 .6-.3h2.863L11.82 2.652a.25.25 0 0 0-.23-.152Zm10.09 7h-2.875l-1.275 1.7a.75.75 0 0 1-.6.3h-3.5a.75.75 0 0 1-.6-.3L4.375 9.5H1.5v3.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="pfp"></div>
+            </div>
+            <div class="btm-header">
+                
+                <div class="tab active">
+                <div class="tab-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="tab-text">Code</div>
+              </div>
+              <div class="tab">
+                <div class="tab-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                    <path
+                      d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="tab-text">Issues</div>
+              </div>
+              <div class="tab ">
+                <div class="tab-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="tab-text">Pull Requests</div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="prs">
+              <div class="pr">
+                <label>
+                  <input type="checkbox" />
+                  <div class="checkbox"></div>
+                </label>
+                <div class="pr-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="pr-text">
+                    <a href="https://youtube.com" class="pr-title">Lunar Lander simulation</a>
+                  <div class="pr-desc"> DQN V-DQN R-DQN Monte carlo </div>
+                </div>
+              </div>
+              <div class="pr">
+                <label>
+                  <input type="checkbox" />
+                  <div class="checkbox"></div>
+                </label>
+                <div class="pr-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="pr-text">
+                  <div class="pr-title">D-16 Building Transformer </div>
+                  <div class="pr-desc">#5038 opened 3 hours ago by </div>
+                </div>
+              </div>
+
+
+              <div class="pr">
+                <label>
+                  <input type="checkbox" />
+                  <div class="checkbox"></div>
+                </label>
+                <div class="pr-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div class="pr-text">
+                  <div class="pr-title">Sonar Binary Classification</div>
+                  <div class="pr-desc">
+                    #4969 opened 3 days ago by 
+                  </div>
+                </div>
+              </div>
+
+              <div class="pr">
+                <label>
+                  <input type="checkbox" />
+                  <div class="checkbox"></div>
+                </label>
+                <div class="pr-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div class="pr-text">
+                  <div class="pr-title">.Conways game of life</div>
+                  <div class="pr-desc">
+                    #4969 opened 3 days ago by 
+                  </div>
+                </div>
+              </div>
+
+              <div class="pr">
+                <label>
+                  <input type="checkbox" />
+                  <div class="checkbox"></div>
+                </label>
+                <div class="pr-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div class="pr-text">
+                  <div class="pr-title">Wave Funation Collapse</div>
+                  <div class="pr-desc">
+                    #4969 opened 3 days ago by 
+                  </div>
+                </div>
+              </div>
+
+              <div class="pr">
+                <label>
+                  <input type="checkbox" />
+                  <div class="checkbox"></div>
+                </label>
+                <div class="pr-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div class="pr-text">
+                  <div class="pr-title">A* algorithm implementation</div>
+                  <div class="pr-desc">
+                    #4969 opened 3 days ago by 
+                  </div>
+                </div>
+              </div>
+
+              <div class="pr">
+                <label>
+                  <input type="checkbox" />
+                  <div class="checkbox"></div>
+                </label>
+                <div class="pr-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div class="pr-text">
+                  <div class="pr-title">.Fine tuning BERT to classify sentiment </div>
+                  <div class="pr-desc">
+                    #4969 opened 3 days ago by 
+                  </div>
+                </div>
+              </div>
+
+              <div class="pr">
+                <label>
+                  <input type="checkbox" />
+                  <div class="checkbox"></div>
+                </label>
+                <div class="pr-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div class="pr-text">
+                  <div class="pr-title">Neural Networks Built From Scratch in c++ Mathematical Analysis of NN</div>
+                  <div class="pr-desc">
+                    #4969 opened 3 days ago by 
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="pr">
+                <label>
+                  <input type="checkbox" />
+                  <div class="checkbox"></div>
+                </label>
+                <div class="pr-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="pr-text">
+                  <div class="pr-title">.Poisonous Mushroom Binary Classification</div>
+                  <div class="pr-desc">#4931 opened 12 days ago by</div>
+                </div>
+              </div>
+              <div class="pr">
+                <label>
+                  <input type="checkbox" />
+                  <div class="checkbox"></div>
+                </label>
+                <div class="pr-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="pr-text">
+                  <div class="pr-title">
+                    Gold Price Prediction
+                  </div>
+                  <div class="pr-desc">#4869 opened 1 month ago by </div>
+                </div>
+              </div>
+              <div class="pr">
+                <label>
+                  <input type="checkbox" />
+                  <div class="checkbox"></div>
+                </label>
+                <div class="pr-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path
+                      d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="pr-text">
+                  <div class="pr-title">heart diesease prediction </div>
+                  <div class="pr-desc">#4206 opened 2 months ago by </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+</section>
+    
+    -->
+
+
+
 
 <!--
 
@@ -1715,10 +2649,7 @@ _______________________________________________________________________
 
 <section></section>
 <div style="height: 60px;"></div> <!-- Spacer -->
-<section></section><section></section>
-<div style="height: 60px;"></div> <!-- Spacer -->
 <section></section>
-
 
 
 <section id="repository" class="container my-5">
@@ -1964,9 +2895,9 @@ color: #A6E22E;
   <style>
     #thenfi button,
     #thenfi .btn {
-      background-color: white; /* White background */
-      color: black; /* Black text */
-      border: 2px solid black; /* Black border */
+      background-color: #181a1b; /* White background */
+      color: rgb(255, 255, 255); /* Black text */
+      border: 2px solid rgb(184, 184, 184); /* Black border */
       border-radius: 5px; /* Rounded corners */
       padding: 10px 20px; /* Padding for better appearance */
       font-size: 12px; /* Font size */
@@ -1978,8 +2909,8 @@ color: #A6E22E;
     /* Button hover effect */
     #thenfi button:hover,
     #thenfi .btn:hover {
-      background-color: black; /* Black background on hover */
-      color: white; /* White text on hover */
+      background-color: rgb(255, 255, 255); /* Black background on hover */
+      color: rgb(0, 0, 0); /* White text on hover */
     }
   </style>
 
@@ -1997,7 +2928,7 @@ color: #A6E22E;
 <section id="quantum" class="container my-5">
   <style>
       #quantum {
-          background: rgb(255, 255, 255);
+          background: #222425;
           padding: 2rem;
           max-width: 1200px;
           margin: 0 auto;
@@ -2011,7 +2942,7 @@ color: #A6E22E;
       margin: 0.5rem 0 2rem 0;
       text-align: center;
       text-transform: uppercase;
-      border-bottom: 1rem double black;
+      border-bottom: 0.5rem solid black;
       font-weight: 900;
       }
 
@@ -2051,7 +2982,7 @@ color: #A6E22E;
       #quantum article {
           columns: 25ch auto;
           gap: 1rem;
-          border-bottom: 1rem solid black;
+         
           padding-bottom: 2rem;
       }
 
@@ -2108,14 +3039,20 @@ color: #A6E22E;
 <br>
 
 
-<section id="quantum" class="container my-5">
+
+<section></section>
+<div style="height: 60px;"></div> <!-- Spacer -->
+<section></section>
+
+
+<section id="iamsick" class="container my-5">
 
   <head>
     <style> 
     
-      .sycamore-visualizer-art {
-          color: #000000;
-          background-color: #ffffff;
+      #iamsick .sycamore-visualizer-art {
+          color: #ffffff;
+          background-color: #181a1b;
           white-space: pre;
           font-size: 16px;
           letter-spacing: 1.3px;
@@ -2127,7 +3064,7 @@ color: #A6E22E;
           outline: none;             /* Removes focus outline if any */
       }
     
-      .sycamore-visualizer-node {
+      #iamsick .sycamore-visualizer-node {
           font-weight: bold;
           transition: color 0.3s;
       }
@@ -2233,17 +3170,8 @@ color: #A6E22E;
 
 </section>
 
-
-<section></section>
-<div style="height: 60px;"></div> <!-- Spacer -->
-<section></section><section></section>
-<div style="height: 60px;"></div> <!-- Spacer -->
-<section></section><section></section>
-<div style="height: 60px;"></div> <!-- Spacer -->
-<section></section>
-
-
-<section id = "topological">
+<!-- Spacer 
+ <section id = "topological">
     <style>
         .card {
           margin: 10px;
@@ -2363,7 +3291,6 @@ color: #A6E22E;
           </div>
         </header>
 
-        <!-- Added Image -->
         <img class="card__hero-img" 
              src="microchip.png" 
              alt="Job illustration">
@@ -2408,7 +3335,7 @@ color: #A6E22E;
           </div>
         </header>
 
-        <!-- Added Image -->
+      
         <img class="card__hero-img" 
              src="intotheunknown.png" 
              alt="Job illustration">
@@ -2453,7 +3380,7 @@ color: #A6E22E;
           </div>
         </header>
 
-        <!-- Added Image -->
+    
         <img class="card__hero-img" 
              src="hopper.png" 
              alt="Job illustration">
@@ -2475,6 +3402,8 @@ color: #A6E22E;
     </article>
   </div>
 </section>
+-->
+
 
 
 
@@ -2638,28 +3567,91 @@ color: #A6E22E;
 <section></section>
 
 
-<section id="pe" class="container my-5">
-  <style>
-    #pe .card {
-    border-radius: 10px; /* Slightly rounded edges */
-    overflow: hidden; /* Keeps image within rounded edges */
+
+<!--
+<style>
+    .minimal-profile {
+      background-color: #141617;
+      color: #f0f0f0;
+      padding: 2rem;
+    }
     
-}
-
-#pe .card-img-top {
-    border-top-left-radius: 10px; /* Match the card rounding */
-    border-top-right-radius: 10px;
-}
+    .minimal-profile .profile-card {
+      background-color: #1c1e1f;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    .minimal-profile .profile-title {
+      color: #ffffff;
+      border-bottom: 2px solid #444;
+      padding-bottom: 0.5rem;
+    }
+    
+    .minimal-profile .list-item dt {
+      color: #bbbbbb;
+    }
+    
+    .minimal-profile .list-item dd {
+      color: #ffffff;
+    }
+    
+    .minimal-profile .list-item a {
+      color: #66ccff;
+      text-decoration: none;
+    }
+    
+    .minimal-profile .list-item a:hover {
+      text-decoration: underline;
+    }
     </style>
-  <h2></h2>
-<!-- Personal Details Card 
- 
+    
+  
 -->
-</section>
-
 
 <section class="minimal-profile">
+  
+  <style>
+    .minimal-profile {
+      background-color: #181a1b;
+      color: #f0f0f0;
+      padding: 2rem;
+    }
     
+    .minimal-profile .profile-card {
+      background-color: #1c1e1f;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    .minimal-profile .profile-title {
+      color: #ffffff;
+      border-bottom: 2px solid #444;
+      padding-bottom: 0.5rem;
+    }
+    
+    .minimal-profile .list-item dt {
+      color: #bbbbbb;
+    }
+    
+    .minimal-profile .list-item dd {
+      color: #ffffff;
+    }
+    
+    .minimal-profile .list-item a {
+      color: #66ccff;
+      text-decoration: none;
+    }
+    
+    .minimal-profile .list-item a:hover {
+      text-decoration: underline;
+    }
+    </style>
+    
+
+
   <div class="profile-container">
     <div class="profile-card">
       <h3 class="profile-title">Personal Details</h3>
@@ -2931,12 +3923,13 @@ color: #e2dedb;
   <style>
     #dor h2{
         font-size: 16px;
+        color:#ffffff;
     }
     #dor button,
     #dor .btn {
-      background-color: white; /* White background */
-      color: black; /* Black text */
-      border: 2px solid black; /* Black border */
+      background-color: #181a1b; /* White background */
+      color: rgb(255, 255, 255); /* Black text */
+      border: 2px solid rgb(184, 184, 184); /* Black border */
       border-radius: 5px; /* Rounded corners */
       padding: 10px 20px; /* Padding for better appearance */
       font-size: 12px; /* Font size */
@@ -2948,8 +3941,8 @@ color: #e2dedb;
     /* Button hover effect */
     #dor button:hover,
     #dor .btn:hover {
-      background-color: black; /* Black background on hover */
-      color: white; /* White text on hover */
+      background-color: rgb(255, 255, 255); /* Black background on hover */
+      color: rgb(0, 0, 0); /* White text on hover */
     }
   </style>
 
