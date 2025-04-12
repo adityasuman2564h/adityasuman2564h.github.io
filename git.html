@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Work Experience</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html, body {
+      font-family: Monospace;
+      font-size: 16px;
+      margin: 0;
+      background: #181a1b;
+      color: #ffffff;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: bolder;
+    }
+
+    a {
+      word-wrap: break-word;
+    }
+
+    .navigation-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .navigation-list-item {
+      cursor: pointer;
+      padding-bottom: 5px;
+      height: 44px;
+    }
+
+    .navigation-list-item div {
+      display: inline-block;
+    }
+
+    .key-text {
+      font-size: 1.5rem;
+    }
+
+    .support-text {
+      font-size: 1rem;
+      visibility: hidden;
+    }
+
+    .navigation-list-item:hover .key-text {
+      color: #3498db;
+      border-bottom: 2px solid #3498db;
+    }
+
+    .navigation-list-item:hover .support-text {
+      visibility: initial;
+    }
+
+    .navigation-list-item.active .key-text {
+      color: #e74c3c;
+      border-bottom: 2px solid #e74c3c;
+    }
+
+    .navigation-list-item.active .support-text {
+      visibility: initial;
+    }
+
+    .panels {
+      position: relative;
+      min-height: 500px;
+    }
+
+    .panel {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .panel.active {
+      display: block;
+      opacity: 1;
+    }
+
+    .img-center {
+      margin: 0 auto;
+      display: block;
+    }
+
+    .img-round {
+      border-radius: 50%;
+    }
+
+    .img-responsive {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .panel h2 {
+      font-weight: bold;
+    }
+
+    .projects-list,
+    .formation-list,
+    .contact-list {
+      padding: 0;
+    }
+
+    .list-item {
+      border-left: 3px solid #3498db;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      list-style: none;
+    }
+
+    .list-item .time {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    .list-item .organization {
+      display: inline-block;
+      color: #2980b9;
+      font-weight: bold;
+    }
+
+    .list-item .organization-url {
+      display: block;
+    }
+
+    .list-item .technologies {
+      display: block;
+      font-style: italic;
+    }
+
+    .list-item .technologies:before {
+      content: "Technologies: ";
+      font-style: normal;
+    }
+
+    .list-item:nth-child(even) {
+      border-color: #e74c3c;
+    }
+
+    .list-item:nth-child(even) .organization {
+      color: #e74c3c;
+    }
+
+    .list-item:nth-child(even) .organization-url {
+      color: #e74c3c;
+    }
+
+    @media only screen and (max-width: 768px) {
+      body {
+        font-size: 15px;
+      }
+
+      .navigation-list-item .key-text {
+        font-size: 0.95rem;
+      }
+
+      .navigation-list-item .support-text {
+        font-size: 0.75rem;
+        visibility: initial;
+      }
+
+      .panels {
+        min-height: 400px;
+      }
+    }
+
+    .container-fluid {
+      padding: 20px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .col-md-3 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+
+    .col-md-9 {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+
+    .col-sm-12 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .col-md-3,
+      .col-md-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <h1>Aditya Suman</h1>
+    <div class="row">
+      <div class="col-md-3 col-sm-12 navigation-panel">
+        <nav>
+          <ul class="navigation-list">
+            <li class="navigation-list-item active" data-nav="who">
+              <div class="key-text">Work Experience</div>
+              <div class="support-text"></div>
+            </li>
+            <li class="navigation-list-item" data-nav="what">
+              <div class="key-text">All Projects</div>
+              <div class="support-text"></div>
+            </li>
+            <li class="navigation-list-item" data-nav="how">
+              <div class="key-text">languages</div>
+              <div class="support-text"></div>
+            </li>
+            <li class="navigation-list-item" data-nav="why">
+              <div class="key-text">Contact</div>
+              <div class="support-text"></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-9 col-sm-12 panels">
+        <div class="panel active" id="who">
+          <h2>Time Line</h2>
+          <ul class="projects-list">
+            <li class="list-item">
+              <span class="time">2023-2024</span>
+              <br>
+              <span class="organization">IEEE RAS Juniour Coordinator and mentor</span>
+              <br>     
+              <span class="work">At Ras-Manipal, I conducted hands-on training sessions on Arduino kits for a group of over 20 freshers. The sessions covered the basics of Arduino programming, working with sensors, and building simple IoT projects. I guided participants through circuit design, coding in C/C++, and troubleshooting common hardware and software issues. My role focused on helping students understand core electronics concepts while encouraging a collaborative and interactive learning environment. By the end of the training, each participant had built their own working prototype and gained confidence in using microcontrollers for real-world applications.</span>
+              <span class="technologies">Arduino, C/C++, Sensors, Breadboard, IoT, Microcontrollers, Embedded Systems, Serial Communication</span>
+
+            </li>
+            <!--
+             <li class="list-item">
+              <span class="time">1/2016 - 7/2016</span>
+              <span class="organization">Misys</span>
+              <a class="organization-url" href="http://www.misys.com/">http://www.misys.com/</a>
+              <span class="work">Converted a legacy Flex/Flash app to an HTML5 Angular 1 application.</span>
+              <span class="technologies">Angular 1, HTML5, SCSS, Gulp, ES5</span>
+            </li>
+            <li class="list-item">
+              <span class="time">3/2015 - 6/2015</span>
+              <span class="organization">Mines Saint-Étienne</span>
+              <a class="organization-url" href="http://www.mines-stetienne.fr/en/">http://www.mines-stetienne.fr/en/</a>
+              <span class="work">Built an Indoor Position Tracking System using Arduino, Xbee, and Ethernet Shield.</span>
+              <span class="technologies">Arduino, C/C++, HTML, ES5</span>
+            </li>
+            <li class="list-item">
+              <span class="time">4/2014 - 8/2014</span>
+              <span class="organization">Leo Burnett Vietnam</span>
+              <a class="organization-url" href="http://leoburnett.com/">http://leoburnett.com/</a>
+              <span class="work">Worked with marketing to launch email campaigns and maintain client sites.</span>
+              <span class="technologies">PHP, Codeigniter, HTML, CSS, ES5, Arduino</span>
+            </li>
+            <li class="list-item">
+              <span class="time">11/2011 - 4/2014</span>
+              <span class="organization">Harvey Nash Vietnam</span>
+              <a class="organization-url" href="https://www.harveynash.com.vn/">https://www.harveynash.com.vn/</a>
+              <span class="work">Maintained Hearst Magazine projects, launched mobile-friendly sites, and deployed official company websites.</span>
+              <span class="technologies">HTML, CSS, ES5, PHP, Wordpress, Grunt, SCSS</span>
+            </li>
+          </ul>
+            -->
+           
+
+        </div>
+
+        <div class="panel" id="what">
+         
+
+          <section id="kinggit" class="container my-5">
+
+            <style>
+          
+            /* Add this first to prevent conflicts */
+            #kinggit * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+          }
+          
+          #kinggit .card-container {
+            font-family: 'DejaVu Sans Mono', Menlo, monospace;
+        
+            
+          position: relative;
+          width:  1400px;
+          height: 500px;
+          border-radius: 1em;
+          margin: 0 2em;
+        }
+        
+        #kinggit .card-border {
+          position: absolute;
+          inset: 0;
+          background: #0005;
+          border-radius: inherit;
+        }
+        
+        #kinggit .card {
+          position: absolute;
+          inset: 0.125em;
+          border-radius: 0.875em;
+          background: #111215;
+          display: flex;
+          flex-direction: column;
+          color: #fff;
+          overflow: hidden;
+        }
+        
+        #kinggit .header {
+          background: #0b0d10;
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          border-bottom: 1px solid #1d1f23;
+        }
+        
+        #kinggit .top-header {
+          background: #0b0d10;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 8px;
+          padding: 0 12px;
+          padding-top: 10px;
+        }
+        
+        #kinggit :where(.repo > a, .repo > span) {
+          text-decoration: none;
+          color: #bebebe;
+          font-weight: 300;
+          font-size: 14px;
+        }
+        
+        #kinggit .repo {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 8px;
+        } 
+        
+        #kinggit .repo-slash {
+          font-size: 10px;
+          pointer-events: none;
+        }
+        
+        #kinggit .repo-name {
+          color: #fff;
+          font-weight: 400;
+        }
+        
+        #kinggit .repo > a {
+          position: relative;
+        }
+        
+        #kinggit .repo > a::before {
+          content: "";
+          position: absolute;
+          inset: -2px -4px;
+          border-radius: 6px;
+          background: hsl(0 0 100 / 7%);
+          opacity: 0;
+          transition: 0.3s;
+        }
+        
+        #kinggit .repo > a:hover::before {
+          opacity: 1;
+        }
+        
+        #kinggit .gh-icon,
+        #kinggit .gh-icon svg {
+          height: 2em;
+          fill: #fff;
+        }
+        
+        #kinggit .space {
+          flex-grow: 1;
+        }
+        
+        #kinggit .icon {
+          cursor: pointer;
+          display: flex;
+          height: 1.5em;
+          width: 1.5em;
+          padding: 0.25em;
+          border-radius: 0.25em;
+          fill: #797d86;
+          outline: 1px solid #303236;
+          transition: 0.3s;
+          /* Add these to center contents */
+          align-items: center;
+          justify-content: center;
+        }
+        #kinggit .icon:hover {
+          background: hsl(0 0 100 / 7%);
+        }
+        
+        #kinggit .icon svg {
+          width: 1em;
+          height: 1em;
+        }
+        
+        #kinggit .btm-header {
+          display: flex;
+          flex-direction: row;
+          padding: 0px 10px;
+          gap: 8px;
+          color: #fff;
+          fill: #fff;
+        }
+        
+        #kinggit .tab {
+          position: relative;
+          padding: 4px 4px;
+          padding-bottom: 12px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 4px;
+          font-size: 14px;
+          cursor: pointer;
+          isolation: isolate;
+        }
+        
+        #kinggit .tab-icon {
+          width: 1em;
+          height: 1.25em;
+          fill: #797d86;
+        }
+        
+        #kinggit .tab.active {
+          border-bottom: 2px solid #e98463;
+        }
+        
+        #kinggit .tab::before {
+          content: "";
+          position: absolute;
+          background: #fff;
+          border-radius: 8px;
+          opacity: 0;
+          inset: 0;
+          bottom: 8px;
+          z-index: -1;
+          transition: 0.3s;
+        }
+        
+        #kinggit .tab:hover::before {
+          opacity: 0.07;
+        }
+        
+        #kinggit .content {
+          height: 100%;
+          overflow: hidden;
+        }
+        
+        #kinggit .prs::-webkit-scrollbar {
+          width: 0;
+        }
+        
+        #kinggit .prs {
+          margin: 12px;
+          height: calc(100% - 24px);
+          display: flex;
+          flex-direction: column;
+          gap: 1px;
+          border: 1px solid #343539;
+          border-radius: 6px;
+          overflow: auto;
+        }
+        
+        #kinggit .pr {
+          display: flex;
+          flex-direction: row;
+          gap: 8px;
+          width: 100%;
+          outline: 1px solid #343539;
+          padding: 8px;
+        }
+        
+        #kinggit .checkbox {
+          position: relative;
+          width: 1em;
+          height: 1em;
+          border-radius: 2px;
+          outline: 1px solid #343539;
+          transition: 0.3s;
+        }
+        
+        #kinggit .checkbox:hover {
+          background: hsl(0 0 100 / 5%);
+        }
+        
+        #kinggit .checkbox:active {
+          outline-color: #2a2c2f;
+          background: hsl(0 0 100 / 0%);
+        }
+        
+        #kinggit .card input:checked ~ .checkbox {
+          outline-color: #797d86;
+        }
+        
+        #kinggit .card input:checked ~ .checkbox:active {
+          outline-color: #56585c;
+        }
+        
+        #kinggit .card input:checked ~ .checkbox::before {
+          content: "";
+          position: absolute;
+          pointer-events: none;
+          width: 4px;
+          height: 8px;
+          border-bottom: 2px solid;
+          border-right: 2px solid;
+          border-color: #fff;
+          transform: translate(5.5px, 2.5px) rotate(45deg);
+        }
+        
+        #kinggit .pr-icon {
+          display: flex;
+          width: 1em;
+          height: 1em;
+          fill: #63d188;
+        }
+        
+        #kinggit pr-text {
+          display: flex;
+          flex-direction: column;
+        }
+        
+        #kinggit .pr-title {
+          font-size: 12px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+        
+        #kinggit .pr-title:hover {
+          color: #4493f8;
+        }
+        
+        #kinggit .pr-desc {
+          padding-left: 2px;
+          font-size: 10px;
+          color: #797d86;
+        }
+        
+        
+        
+        
+        
+        
+        #kinggit .card input {
+          display: none;
+        }
+        #kinggit .pr-title {
+          font-size: 12px;
+          font-weight: 600;
+          cursor: pointer;
+          text-decoration: none; /* Remove default underline */
+          color: inherit; /* Inherit text color from parent */
+          display: inline-block; /* Maintain layout like a div */
+        }
+        
+        #kinggit .pr-title:hover {
+          color: #4493f8;
+          text-decoration: none; /* Ensure no underline appears on hover */
+        }
+        
+        
+            </style>
+        
+            
+            <svg style="position: absolute; width: 0; height: 0;">
+                <filter id="unopaq" y="-100%" height="300%" x="-100%" width="300%">
+                  <feColorMatrix
+                    values="1 0 0 0 0 
+                          0 1 0 0 0 
+                          0 0 1 0 0 
+                          0 0 0 5 0"
+                  ></feColorMatrix>
+                </filter>
+                <filter id="unopaq2" y="-100%" height="300%" x="-100%" width="300%">
+                  <feColorMatrix
+                    values="1 0 0 0 0 
+                          0 1 0 0 0 
+                          0 0 1 0 0 
+                          0 0 0 10 0"
+                  ></feColorMatrix>
+                </filter>
+                <filter id="unopaq3" y="-100%" height="300%" x="-100%" width="300%">
+                  <feColorMatrix
+                    values="1 0 0 1 0 
+                          0 1 0 1 0 
+                          0 0 1 1 0 
+                          0 0 0 2 0"
+                  ></feColorMatrix>
+                </filter>
+              </svg>
+              <div class="card-container">
+                <div class="spin spin-blur"></div>
+                <div class="spin spin-intense"></div>
+                <div class="backdrop"></div>
+                <div class="card-border">
+                  <div class="spin spin-inside"></div>
+                </div>
+                <div class="card">
+                  <div class="header">
+                    <div class="top-header">
+                      <div class="icon">
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <a class="gh-icon" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path
+                            d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
+                          ></path>
+                        </svg>
+                      </a>
+                      <div class="repo">
+                        <a class="repo-owner" href="#">Adi</a>
+                        <span class="repo-slash">/</span>
+                        <a class="repo-name" href="#">All projects</a>
+                      </div>
+                      <div class="space"></div>
+                      <div class="icon">
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                          <path
+                            d="M2.8 2.06A1.75 1.75 0 0 1 4.41 1h7.18c.7 0 1.333.417 1.61 1.06l2.74 6.395c.04.093.06.194.06.295v4.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-4.5c0-.101.02-.202.06-.295Zm1.61.44a.25.25 0 0 0-.23.152L1.887 8H4.75a.75.75 0 0 1 .6.3L6.625 10h2.75l1.275-1.7a.75.75 0 0 1 .6-.3h2.863L11.82 2.652a.25.25 0 0 0-.23-.152Zm10.09 7h-2.875l-1.275 1.7a.75.75 0 0 1-.6.3h-3.5a.75.75 0 0 1-.6-.3L4.375 9.5H1.5v3.75c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25Z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="pfp"></div>
+                    </div>
+                    <div class="btm-header">
+                        
+                        <div class="tab active">
+                        <div class="tab-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                              d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="tab-text">Code</div>
+                      </div>
+                      <div class="tab">
+                        <div class="tab-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                            <path
+                              d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="tab-text">Issues</div>
+                      </div>
+                      <div class="tab ">
+                        <div class="tab-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                              d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="tab-text">Pull Requests</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="prs">
+                      <div class="pr">
+                        <label>
+                          <input type="checkbox" />
+                          <div class="checkbox"></div>
+                        </label>
+                        <div class="pr-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                              d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="pr-text">
+                            <a href="https://youtube.com" class="pr-title">Lunar Lander simulation</a>
+                          <div class="pr-desc"> DQN V-DQN R-DQN Monte carlo </div>
+                        </div>
+                      </div>
+                      <div class="pr">
+                        <label>
+                          <input type="checkbox" />
+                          <div class="checkbox"></div>
+                        </label>
+                        <div class="pr-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                              d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="pr-text">
+                          <div class="pr-title">D-16 Building Transformer </div>
+                          <div class="pr-desc">#5038 opened 3 hours ago by gaylord</div>
+                        </div>
+                      </div>
+        
+        
+                      <div class="pr">
+                        <label>
+                          <input type="checkbox" />
+                          <div class="checkbox"></div>
+                        </label>
+                        <div class="pr-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                              d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                            ></path>
+                          </svg>
+                        </div>
+        
+                        <div class="pr-text">
+                          <div class="pr-title">Sonar Binary Classification</div>
+                          <div class="pr-desc">
+                            #4969 opened 3 days ago by xX_Iam14YearsOld_Xx
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="pr">
+                        <label>
+                          <input type="checkbox" />
+                          <div class="checkbox"></div>
+                        </label>
+                        <div class="pr-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                              d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                            ></path>
+                          </svg>
+                        </div>
+        
+                        <div class="pr-text">
+                          <div class="pr-title">.Conways game of life</div>
+                          <div class="pr-desc">
+                            #4969 opened 3 days ago by xX_Iam14YearsOld_Xx
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="pr">
+                        <label>
+                          <input type="checkbox" />
+                          <div class="checkbox"></div>
+                        </label>
+                        <div class="pr-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                              d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                            ></path>
+                          </svg>
+                        </div>
+        
+                        <div class="pr-text">
+                          <div class="pr-title">Wave Funation Collapse</div>
+                          <div class="pr-desc">
+                            #4969 opened 3 days ago by xX_Iam14YearsOld_Xx
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="pr">
+                        <label>
+                          <input type="checkbox" />
+                          <div class="checkbox"></div>
+                        </label>
+                        <div class="pr-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                              d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                            ></path>
+                          </svg>
+                        </div>
+        
+                        <div class="pr-text">
+                          <div class="pr-title">A* algorithm implementation</div>
+                          <div class="pr-desc">
+                            #4969 opened 3 days ago by xX_Iam14YearsOld_Xx
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="pr">
+                        <label>
+                          <input type="checkbox" />
+                          <div class="checkbox"></div>
+                        </label>
+                        <div class="pr-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                              d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                            ></path>
+                          </svg>
+                        </div>
+        
+                        <div class="pr-text">
+                          <div class="pr-title">.Fine tuning BERT to classify sentiment </div>
+                          <div class="pr-desc">
+                            #4969 opened 3 days ago by xX_Iam14YearsOld_Xx
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="pr">
+                        <label>
+                          <input type="checkbox" />
+                          <div class="checkbox"></div>
+                        </label>
+                        <div class="pr-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                              d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                            ></path>
+                          </svg>
+                        </div>
+        
+                        <div class="pr-text">
+                          <div class="pr-title">Neural Networks Built From Scratch in c++ Mathematical Analysis of NN</div>
+                          <div class="pr-desc">
+                            #4969 opened 3 days ago by xX_Iam14YearsOld_Xx
+                          </div>
+                        </div>
+                      </div>
+        
+        
+        
+                      <div class="pr">
+                        <label>
+                          <input type="checkbox" />
+                          <div class="checkbox"></div>
+                        </label>
+                        <div class="pr-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                              d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="pr-text">
+                          <div class="pr-title">.Poisonous Mushroom Binary Classification</div>
+                          <div class="pr-desc">#4931 opened 12 days ago by cat_lover69</div>
+                        </div>
+                      </div>
+                      <div class="pr">
+                        <label>
+                          <input type="checkbox" />
+                          <div class="checkbox"></div>
+                        </label>
+                        <div class="pr-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                              d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="pr-text">
+                          <div class="pr-title">
+                            Gold Price Prediction
+                          </div>
+                          <div class="pr-desc">#4869 opened 1 month ago by plshelp</div>
+                        </div>
+                      </div>
+                      <div class="pr">
+                        <label>
+                          <input type="checkbox" />
+                          <div class="checkbox"></div>
+                        </label>
+                        <div class="pr-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                              d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="pr-text">
+                          <div class="pr-title">heart diesease prediction </div>
+                          <div class="pr-desc">#4206 opened 2 months ago by yourmom69</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+        
+        </section>
+
+        </div>
+
+        <div class="panel" id="how">
+          <h2>languages</h2>
+                  <h3>Python - Pytorch scikit learn</h3>
+                  <h3>C++ programmming</h3>
+                  <h3>R language</h3>
+                  <h3>CUDA</h3>
+                  <h3>MySql</h3>
+
+
+          <div class="panel" id="why">
+            <h2>contact me</h2>
+          
+            
+            </section>
+            </div>
+          
+          
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navItems = document.querySelectorAll('.navigation-list-item');
+      const panels = document.querySelectorAll('.panel');
+
+      function activatePanel(panelId) {
+        // Deactivate all panels and nav items
+        panels.forEach(panel => panel.classList.remove('active'));
+        navItems.forEach(item => item.classList.remove('active'));
+
+        // Activate target panel and nav item
+        const targetPanel = document.getElementById(panelId);
+        const targetNav = document.querySelector(`[data-nav="${panelId}"]`);
+        
+        if(targetPanel && targetNav) {
+          targetPanel.classList.add('active');
+          targetNav.classList.add('active');
+        }
+      }
+
+      // Add click listeners to nav items
+      navItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const panelId = item.dataset.nav;
+          activatePanel(panelId);
+        });
+      });
+
+      // Activate initial panel
+      activatePanel('who');
+    });
+  </script>
+</body>
+</html>
+
+
+
